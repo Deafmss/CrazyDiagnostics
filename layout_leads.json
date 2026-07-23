@@ -1,0 +1,370 @@
+{
+  "url": "https://crm.datacrazy.io/leads",
+  "title": "CRM Datacrazy",
+  "timestamp": "2026-06-10T09:56:40.527Z",
+  "route": "/leads",
+  "sidebarMenu": [],
+  "activeChat": {
+    "header": null,
+    "selectedItemText": "Nome | Contatos | Tags | Dados | Data de criação",
+    "detailsPanel": null
+  },
+  "kanban": {
+    "columns": []
+  },
+  "automations": {
+    "title": null,
+    "nodes": [
+      {
+        "text": "💭Suporte",
+        "classes": "bb-feedback-button gleap-font gl-block bb-feedback-button--classic-button-style",
+        "id": null,
+        "isSelected": false
+      }
+    ]
+  },
+  "dashboard": [],
+  "controls": [
+    {
+      "type": "button",
+      "text": "Novo Lead",
+      "id": null,
+      "classes": "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.flex > div.flex > button.inline-flex",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Visões",
+      "id": null,
+      "classes": "flex gap-1 justify-between items-center cursor-pointer border p-1.5 rounded-md px-3 py-2 h-8 border-dashed w-48 bg-white border-zinc-300",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.flex > div.flex > button.flex",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Filtros",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.flex > div.flex > div.flex > div.flex > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Filtros",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-input bg-white h-8 rounded-md px-3 min-h-8 border-dashed",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.flex > div.flex > div.flex > div.flex > button > div > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/button[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[1]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[2]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[3]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[4]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[5]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[6]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[7]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[8]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[9]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[10]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[11]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[12]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[13]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[14]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[15]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[16]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[17]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[18]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[19]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[20]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[21]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[22]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[23]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[24]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[25]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[26]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[27]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[28]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[29]/div[1]/td[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "p-0 peer h-4 w-4 shrink-0 cursor-pointer rounded-sm border border-solid border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground flex items-center justify-center text-current translate-y-[2px]",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > td.align-middle > button.p-0",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/div[30]/div[1]/td[1]/button[1]"
+    }
+  ],
+  "forms": [
+    {
+      "type": "input:text",
+      "id": null,
+      "name": null,
+      "placeholder": "Pesquisar...",
+      "value": null,
+      "labelText": null,
+      "classes": "flex rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-8 px-3 py-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div > div.flex > div.flex > div.flex > input.flex"
+    },
+    {
+      "type": "input:file",
+      "id": null,
+      "name": null,
+      "placeholder": null,
+      "value": null,
+      "labelText": null,
+      "classes": "w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-10 px-3 py-2 hidden",
+      "selector": "div.fixed > div.flex > div.h-full > section.flex > div.relative > div.flex > div.relative > input.w-full"
+    },
+    {
+      "type": "textarea:textarea",
+      "id": null,
+      "name": null,
+      "placeholder": null,
+      "value": null,
+      "labelText": null,
+      "classes": "flex min-h-[5rem] w-full rounded-md px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:border-blue-400 disabled:cursor-not-allowed bg-blue-50 border-0 max-h-72 border-l-[3px] disabled:opacity-70 border-blue-400",
+      "selector": "div.fixed > div.flex > div.h-full > section.flex > div > div.py-2 > div.px-3 > textarea.flex"
+    },
+    {
+      "type": "input:tel",
+      "id": null,
+      "name": null,
+      "placeholder": "(xx) xxxx-xxxx",
+      "value": "+55 (11) 992928899",
+      "labelText": null,
+      "classes": "form-control text-xs h-6 max-h-6 w-full pr-2 items-center rounded-sm !bg-transparent hover:!bg-black/5 !border-none",
+      "selector": "div.fixed > div.flex > div.h-full > section.flex > div.flex-1 > div.flex > div.ring-offset-background > div.pb-4 > div.flex > div.flex > div.flex-1 > div.!bg-transparent > input.form-control"
+    },
+    {
+      "type": "input:text",
+      "id": null,
+      "name": null,
+      "placeholder": "dd/MM/yyyy",
+      "value": null,
+      "labelText": null,
+      "classes": "flex w-full rounded-md border border-input text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-10 cursor-pointer bg-transparent border-none p-0 text-gray-400 pl-7",
+      "selector": "div.fixed > div.flex > div.h-full > section.flex > div.flex-1 > div.flex > div.ring-offset-background > div.pb-4 > div.flex > div.flex > div.flex > div.flex-1 > div.grid > button > div.relative > input.flex"
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Leads",
+      "classes": "text-lg md:text-2xl font-semibold text-title overflow-hidden text-ellipsis"
+    },
+    {
+      "tag": "H3",
+      "text": "Consulte, crie, modifique ou remova seus leads",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis"
+    },
+    {
+      "tag": "H3",
+      "text": "25194 resultados",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis"
+    }
+  ]
+}

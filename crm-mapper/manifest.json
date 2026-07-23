@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "CrazyLayoutMapper",
+  "version": "1.0.0",
+  "description": "Developer utility to automatically capture and sync DataCrazy CRM DOM layout structures to workspace.",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "*://*.datacrazy.io/*",
+    "http://localhost/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.datacrazy.io/*",
+        "http://localhost/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

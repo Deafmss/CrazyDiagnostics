@@ -1,0 +1,264 @@
+{
+  "url": "https://crm.datacrazy.io/",
+  "title": "CRM Datacrazy",
+  "timestamp": "2026-06-11T15:07:52.928Z",
+  "route": "/",
+  "sidebarMenu": [],
+  "activeChat": {
+    "header": null,
+    "selectedItemText": "Lead | Produto | Atividades | Atendente | Etapa | Dados",
+    "detailsPanel": null
+  },
+  "kanban": {
+    "columns": []
+  },
+  "automations": {
+    "title": null,
+    "nodes": [
+      {
+        "text": "💭Suporte",
+        "classes": "bb-feedback-button gleap-font gl-block bb-feedback-button--classic-button-style",
+        "id": null,
+        "isSelected": false
+      }
+    ]
+  },
+  "dashboard": [],
+  "controls": [
+    {
+      "type": "button",
+      "text": "jun 04, 2026 - jun 11, 2026",
+      "id": "date",
+      "classes": "cursor-pointer select-none inline-flex items-center whitespace-nowrap rounded-md text-sm border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-input bg-white h-10 px-4 py-2 min-h-10 w-[260px] justify-start text-left font-normal",
+      "selector": "#date",
+      "xpath": "//*[@id=\"date\"]"
+    },
+    {
+      "type": "button",
+      "text": "Negócios",
+      "id": null,
+      "classes": "inline-flex items-center justify-center text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-accent border border-input hover:bg-accent hover:text-accent-foreground px-5 rounded-none min-h-10 h-10 bg-white border-r-0 last:border-r first:rounded-l-md last:rounded-r-md data-[state=on]:text-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.flex > div.flex > div.flex > div.flex > button.inline-flex",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Multiatendimento",
+      "id": null,
+      "classes": "inline-flex items-center justify-center text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-accent border border-input hover:bg-accent hover:text-accent-foreground px-5 rounded-none min-h-10 h-10 bg-white border-r-0 last:border-r first:rounded-l-md last:rounded-r-md data-[state=on]:text-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.flex > div.flex > div.flex > div.flex > button.inline-flex",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/button[2]"
+    },
+    {
+      "type": "button",
+      "text": "Atividades",
+      "id": null,
+      "classes": "inline-flex items-center justify-center text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-accent border border-input hover:bg-accent hover:text-accent-foreground px-5 rounded-none min-h-10 h-10 bg-white border-r-0 last:border-r first:rounded-l-md last:rounded-r-md data-[state=on]:text-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.flex > div.flex > div.flex > div.flex > button.inline-flex",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/button[3]"
+    },
+    {
+      "type": "button",
+      "text": "Previous slide",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none underline-offset-4 bg-transparent border-none min-h-10 absolute h-8 w-8 rounded-full top-1/2 -translate-y-1/2 text-gray-700 -left-2 p-0 disabled:opacity-30",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.relative > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Next slide",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none underline-offset-4 bg-transparent border-none min-h-10 absolute h-8 w-8 rounded-full top-1/2 -translate-y-1/2 text-gray-700 p-0 -right-2 disabled:opacity-30",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.relative > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[2]"
+    },
+    {
+      "type": "button",
+      "text": "Previous slide",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none underline-offset-4 bg-transparent border-none min-h-10 absolute h-8 w-8 rounded-full top-1/2 -translate-y-1/2 text-gray-700 -left-5 p-0 disabled:opacity-30",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.grid > div.flex > div.flex > div.flex > div.flex > div.flex > div.relative > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Next slide",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none underline-offset-4 bg-transparent border-none min-h-10 absolute h-8 w-8 rounded-full top-1/2 -translate-y-1/2 text-gray-700 p-0 -right-5 disabled:opacity-30",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.grid > div.flex > div.flex > div.flex > div.flex > div.flex > div.relative > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/button[2]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.flex-col > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > div.flex > div.font-medium > div.flex > div.flex-1 > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.flex-col > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > div.flex > div.font-medium > div.flex > div.flex-1 > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.flex-col > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > div.flex > div.font-medium > div.flex > div.flex-1 > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.flex-col > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > div.flex > div.font-medium > div.flex > div.flex-1 > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.flex-col > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > div.flex > div.font-medium > div.flex > div.flex-1 > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/div[5]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.flex-col > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > div.flex > div.font-medium > div.flex > div.flex-1 > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/div[6]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.flex-col > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > div.flex > div.font-medium > div.flex > div.flex-1 > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/div[7]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.flex-col > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > div.flex > div.font-medium > div.flex > div.flex-1 > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/div[8]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.flex-col > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > div.flex > div.font-medium > div.flex > div.flex-1 > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/div[9]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.flex-col > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > div.flex > div.font-medium > div.flex > div.flex-1 > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/div[10]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.flex-col > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > div.flex > div.font-medium > div.flex > div.flex-1 > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/div[11]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.flex-col > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > div.flex > div.font-medium > div.flex > div.flex-1 > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/div[12]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.flex-col > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > div.flex > div.font-medium > div.flex > div.flex-1 > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/div[13]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.flex-col > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > div.flex > div.font-medium > div.flex > div.flex-1 > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/div[14]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.flex-col > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > div.flex > div.font-medium > div.flex > div.flex-1 > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/div[15]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.w-full > div.flex > div.flex-col > div > div.flex > div.relative > div.scrollbar-sm > table.w-full > tbody > div.w-full > div.w-full > div.flex > div.font-medium > div.flex > div.flex-1 > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/div[16]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    }
+  ],
+  "forms": [],
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Dashboard",
+      "classes": "text-lg md:text-2xl font-semibold text-title overflow-hidden text-ellipsis"
+    },
+    {
+      "tag": "H3",
+      "text": "Visão geral do seu desempenho e atividades",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis"
+    },
+    {
+      "tag": "H3",
+      "text": "Visualização por valor dos negócios",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs leading-tight"
+    },
+    {
+      "tag": "H3",
+      "text": "Visualização por quantidade de negócios",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs leading-tight"
+    },
+    {
+      "tag": "H3",
+      "text": "marcella.oliveira@nixagencia.com.br",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden truncate"
+    },
+    {
+      "tag": "H3",
+      "text": "Negócios",
+      "classes": "font-normal text-subtitle overflow-hidden text-2xs truncate"
+    },
+    {
+      "tag": "H3",
+      "text": "Ticket médio",
+      "classes": "font-normal text-subtitle overflow-hidden text-2xs truncate"
+    },
+    {
+      "tag": "H3",
+      "text": "Total",
+      "classes": "font-normal text-subtitle overflow-hidden text-2xs truncate"
+    }
+  ]
+}

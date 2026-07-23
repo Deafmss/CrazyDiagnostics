@@ -1,0 +1,190 @@
+{
+  "url": "https://crm.datacrazy.io/multiservice?status=opened",
+  "title": "CRM Datacrazy",
+  "timestamp": "2026-06-11T02:41:41.812Z",
+  "route": "/multiservice?status=opened",
+  "sidebarMenu": [],
+  "activeChat": {
+    "header": null,
+    "selectedItemText": null,
+    "detailsPanel": null
+  },
+  "kanban": {
+    "columns": []
+  },
+  "automations": {
+    "title": null,
+    "nodes": [
+      {
+        "text": "💭Suporte",
+        "classes": "bb-feedback-button gleap-font gl-block bb-feedback-button--classic-button-style",
+        "id": null,
+        "isSelected": false
+      }
+    ]
+  },
+  "dashboard": [],
+  "controls": [
+    {
+      "type": "button",
+      "text": "Filtros",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex justify-center whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 underline-offset-4 border-none rounded-md items-center bg-neutral-200/55 text-neutral-500 border border-primary font-light px-2 text-xs gap-1 h-6 min-h-6 hover:bg-neutral-200/90",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.grid > div.flex > div.flex > div.flex > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Finalizar",
+      "id": null,
+      "classes": "cursor-pointer select-none items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-7 rounded-md min-h-6 flex gap-1 px-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.grid > div.flex > div > div.h-full > div.flex > div.w-full > div.flex > div.flex > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "+ Adicionar negócio",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 border-none rounded-md text-xs h-6 min-h-6 p-2 bg-zinc-100",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.grid > div.flex > div > div.border > div.border-b > div.flex > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "+ Executar automação",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 border-none rounded-md text-xs h-6 min-h-6 p-2 bg-zinc-100",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.grid > div.flex > div > div.border > div.border-b > div.flex > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/button[2]"
+    },
+    {
+      "type": "button",
+      "text": "+ Adicionar lista",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 border-none rounded-md text-xs h-6 min-h-6 p-2 bg-zinc-100",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.grid > div.flex > div > div.border > div.border-b > div.flex > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/button[3]"
+    },
+    {
+      "type": "button",
+      "text": "Adicionar +",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground rounded-md px-3 h-6 min-h-6 text-2xs bg-gray-50 border-none",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.grid > div.flex > div > div.border > div.border-b > div.flex > div.flex > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.grid > div.flex > div > div.border > div.border-b > div.mt-1 > div.scale-90 > div.flex > div.flex > button",
+      "xpath": "//*[@id=\"radix-:r26p:\"]/div[1]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Sem produto",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.grid > div.flex > div > div.border > div.border-b > div.mt-1 > div.scale-90 > div.flex > div.flex > button",
+      "xpath": "//*[@id=\"radix-:r26u:\"]/div[1]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Adicionar +",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground rounded-md px-3 h-6 min-h-6 text-2xs bg-gray-50 border-none",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.grid > div.flex > div > div.border > div.border-b > div.flex > div.flex > div.flex > div > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[12]/div[1]/div[1]/div[1]/div[2]/button[1]"
+    }
+  ],
+  "forms": [
+    {
+      "type": "input:text",
+      "id": null,
+      "name": null,
+      "placeholder": "Pesquise seus contatos",
+      "value": null,
+      "labelText": null,
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-10 px-3 py-2 border-none md:h-12 pl-3 mb-2 mx-2 md:mx-0 md:mb-0",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.grid > div.flex > div.flex > div.relative > input.flex"
+    },
+    {
+      "type": "textarea:textarea",
+      "id": null,
+      "name": "message",
+      "placeholder": "Mensagem...",
+      "value": null,
+      "labelText": null,
+      "classes": "border-input px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:border-blue-400 disabled:cursor-not-allowed disabled:opacity-50 resize-none box-border min-h-9 pb-0 max-h-72 scrollbar-medium dark-text-area w-full border rounded-2xl flex items-center h-9 bg-background pr-14",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.grid > div.flex > div > div.h-full > div.flex > div.overflow-hidden > div.relative > div.p-2 > div.flex > textarea.border-input"
+    },
+    {
+      "type": "input:tel",
+      "id": null,
+      "name": null,
+      "placeholder": "(xx) xxxx-xxxx",
+      "value": "+55 (62) 984020047",
+      "labelText": null,
+      "classes": "form-control text-xs h-6 max-h-6 w-full pr-2 text-end items-center rounded-sm bg-transparent hover:bg-black/5 !border-none",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.grid > div.flex > div > div.border > div.border-b > div.mt-1 > div.flex > div.flex > div.bg-transparent > input.form-control"
+    },
+    {
+      "type": "input:text",
+      "id": null,
+      "name": null,
+      "placeholder": "dd/MM/yyyy",
+      "value": null,
+      "labelText": null,
+      "classes": "rounded-md border border-input ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary cursor-pointer bg-transparent border-none p-0 text-xs text-end h-6 max-h-6 px-2 flex items-center truncate whitespace-nowrap overflow-hidden w-[122px] placeholder:text-gray-400 text-gray-400 pl-7",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.grid > div.flex > div > div.border > div.border-b > div.mt-1 > div.flex > div.flex > div.text-xs > button > div.relative > input.rounded-md"
+    },
+    {
+      "type": "textarea:textarea",
+      "id": null,
+      "name": null,
+      "placeholder": null,
+      "value": null,
+      "labelText": null,
+      "classes": "flex min-h-[5rem] w-full rounded-md px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:border-blue-400 disabled:cursor-not-allowed bg-blue-50 border-0 max-h-72 my-1 border-l-[3px] disabled:opacity-70 border-blue-400",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.grid > div.flex > div > div.border > div.border-b > div.mt-1 > textarea.flex"
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Mensagem com anexo",
+      "classes": "font-normal text-subtitle truncate flex-1 text-xs overflow-hidden"
+    },
+    {
+      "tag": "H3",
+      "text": "14h",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "oi",
+      "classes": "truncate flex-1 text-xs overflow-hidden text-primary font-medium"
+    },
+    {
+      "tag": "H3",
+      "text": "03/06/2026",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Kkkkkkkkkkkkkkk",
+      "classes": "font-normal text-subtitle truncate flex-1 text-xs overflow-hidden"
+    },
+    {
+      "tag": "H3",
+      "text": "03/06/2026",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "#23",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis mr-1"
+    }
+  ]
+}

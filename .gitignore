@@ -1,0 +1,19 @@
+# Logs e Dados Temporários
+captured_errors.json
+*.log
+.DS_Store
+Thumbs.db
+
+# Node.js / Server
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Antigravity / Brain / Logs do sistema
+.system_generated/
+scratch/
+
+# VS Code & IDEs
+.vscode/
+.idea/

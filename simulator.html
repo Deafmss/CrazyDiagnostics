@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrazyDiagnostics Simulator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090b11;
+      --card-bg: rgba(18, 22, 35, 0.6);
+      --border: rgba(255, 255, 255, 0.08);
+      --text: #f1f5f9;
+      --text-muted: #64748b;
+      --accent: #ff3366;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      background: radial-gradient(circle at center, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+    }
+    .panel {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      backdrop-filter: blur(12px);
+      padding: 40px;
+      width: 100%;
+      max-width: 650px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 5px;
+    }
+    h1 span {
+      color: var(--accent);
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    .actions-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+    button {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 14px 20px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    button:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+    button span.desc {
+      font-size: 10px;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+    .console-box {
+      background: #020305;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      font-family: 'Fira Code', monospace;
+      font-size: 11px;
+      color: #38bdf8;
+      max-height: 150px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+    }
+    /* Toast Simulation Container */
+    #toast-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 10000;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .simulated-toast {
+      background: #ef4444;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 500;
+      box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+      animation: slide-in 0.3s ease;
+    }
+    .simulated-toast.warn {
+      background: #f59e0b;
+      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+    }
+    @keyframes slide-in {
+      from { transform: translateX(100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <header>
+      <h1>Crazy<span>Diagnostics</span> Simulator</h1>
+      <p class="subtitle">Painel de simulação de erros para validar a extensão.</p>
+    </header>
+
+    <div class="actions-grid">
+      <button onclick="triggerMetaError()">
+        Meta WABA Bloqueada
+        <span class="desc">Chama fetch retornando HTTP 400 com erro 131031</span>
+      </button>
+      <button onclick="triggerEvolutionError()">
+        Evolution Logical Error
+        <span class="desc">Chama fetch com HTTP 200, mas payload erroCode</span>
+      </button>
+      <button onclick="triggerPrismaError()">
+        Duplicidade Prisma P2002
+        <span class="desc">Gera exceção PrismaUniqueConstraintViolation</span>
+      </button>
+      <button onclick="triggerUniversalError()">
+        Conexão Universal Timeout
+        <span class="desc">Chama endpoint HTTP 504 Gateway Timeout</span>
+      </button>
+      <button onclick="triggerFailedEvolutionRequest()">
+        Erro Evolution com Lead
+        <span class="desc">Chama requisição interceptada contendo João da Silva</span>
+      </button>
+      <button onclick="triggerToastAlert()">
+        Exibir Alerta na Tela (Toast)
+        <span class="desc">Gera elemento DOM vermelho com erro da Evolution</span>
+      </button>
+      <button onclick="triggerException()">
+        Crash de Código JavaScript
+        <span class="desc">Gera ReferenceError no escopo global</span>
+      </button>
+      <button onclick="triggerMetaSuccessConnection()">
+        Sucesso Meta (Conexão)
+        <span class="desc">Carrega mock_meta.json com conexão Meta ativa</span>
+      </button>
+      <button onclick="triggerEvolutionSuccessConnection()">
+        Sucesso Evolution (Conexão)
+        <span class="desc">Carrega mock_evolution.json com conexão Evolution ativa</span>
+      </button>
+    </div>
+
+    <!-- Mock CRM Context for Scraper testing -->
+    <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 20px;">
+      <h3 style="font-size: 11px; font-weight: 700; margin-bottom: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">Mock CRM Active Context (Teste de Contexto)</h3>
+      <div style="display: flex; gap: 20px; font-size: 11px;">
+        <div style="flex: 1; border-right: 1px solid var(--border); padding-right: 20px;">
+          <h4 style="font-weight: 600; margin-bottom: 8px; color: var(--text-muted);">Multi Atendimento / Chat:</h4>
+          <div class="active-chat-name" style="font-weight: 600; color: var(--text); margin-bottom: 4px;">👤 João da Silva</div>
+          <div class="contact-number" style="color: var(--text-muted); font-size: 11px;">📞 (11) 98765-4321</div>
+        </div>
+        <div style="flex: 1;">
+          <h4 style="font-weight: 600; margin-bottom: 8px; color: var(--text-muted);">Automação Ativa:</h4>
+          <div class="active-node selected" style="border: 1px solid rgba(99, 102, 241, 0.4); padding: 8px; border-radius: 6px; background: rgba(99, 102, 241, 0.05);">
+            <div class="node-title" style="font-weight: 600; color: #6366f1;">🤖 Boas Vindas</div>
+            <div style="font-size: 10px; color: var(--text-secondary); margin-top: 4px;">Bloco: <span class="block-name" style="color: var(--text); font-weight: 500;">[Enviar Mensagem]</span></div>
+            <div class="node-error" style="font-size: 10px; color: #ef4444; margin-top: 4px;">⚠️ Erro: Evolution API desconectada</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="console-box" id="console-out">> Painel pronto. Carregue a extensão no Chrome e abra este simulator via localhost para que a extensão intercepte os logs.</div>
+  </div>
+
+  <div id="toast-container"></div>
+
+  <script>
+    const consoleOut = document.getElementById('console-out');
+    function logSim(text) {
+      consoleOut.textContent += '\n> ' + text;
+      consoleOut.scrollTop = consoleOut.scrollHeight;
+    }
+
+    // 1. Simula Erro da Meta
+    async function triggerMetaError() {
+      logSim('Simulando erro de API Meta...');
+      try {
+        const res = await fetch('https://run.mocky.io/v3/fake-meta-error', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' }
+        });
+      } catch(err) {
+        console.error('Meta Cloud API Error: [131031] Account has been restricted due to policy violations. WABA status: suspended.');
+      }
+    }
+
+    // 2. Simula Erro da Evolution com HTTP 200 mas corpo descrevendo falha
+    async function triggerEvolutionError() {
+      logSim('Simulando resposta HTTP 200 com payload contendo erro da Evolution...');
+      console.warn('Evolution API response: {"status": "ERROR", "erroCode": "evolution_disconnected", "errorMessage": "Instance was closed on WhatsApp device"}');
+    }
+
+    // 3. Simula Erro de Banco Prisma
+    function triggerPrismaError() {
+      logSim('Simulando exceção de banco de dados Prisma...');
+      console.error('PrismaClientKnownRequestError: Unique constraint failed on the fields: (email). Code: P2002.');
+    }
+
+    // 4. Simula Erro de Conexão Universal HTTP Timeout
+    async function triggerUniversalError() {
+      logSim('Simulando Conexão Universal HTTP Timeout...');
+      console.error('API Error: Connection Universal HTTP 504 Gateway Timeout from endpoint https://api.datacrazy.io/universal-connection/send');
+    }
+
+    // 5. Simula requisição fetch contendo dados do Lead que falhará
+    async function triggerFailedEvolutionRequest() {
+      logSim('Disparando requisição real contendo dados do Lead para Evolution API...');
+      try {
+        await fetch('https://api.datacrazy.io/evolution/send/5511999998888', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            leadId: '60c72b2f9b1d8e0015c8e3f4',
+            leadName: 'João da Silva',
+            message: 'Envio de teste.'
+          })
+        });
+      } catch (err) {
+        logSim('Requisição interceptada pela extensão!');
+      }
+    }
+
+    // 6. Simula Toast Alert no DOM
+    function triggerToastAlert() {
+      logSim('Simulando Alerta Vermelho Toast...');
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = 'simulated-toast';
+      toast.textContent = 'Erro: Falha ao enviar mensagem pela Evolution API. Dispositivo desconectado.';
+      container.appendChild(toast);
+      
+      setTimeout(() => {
+        toast.remove();
+      }, 4000);
+    }
+
+    // 7. Simula Crash de Código JavaScript
+    function triggerException() {
+      logSim('Disparando exceção não tratada...');
+      setTimeout(() => {
+        throw new ReferenceError('datacrazyFlowInstance is not defined at main.js:2055');
+      }, 50);
+    }
+
+    // 8. Simula conexões de sucesso
+    async function triggerMetaSuccessConnection() {
+      logSim('Simulando sucesso de conexão Meta...');
+      try {
+        const res = await fetch('mock_meta.json');
+        const data = await res.json();
+        logSim('Conexão Meta enviada ao interceptador!');
+      } catch(err) {
+        logSim('Erro ao carregar mock_meta.json: ' + err.message);
+      }
+    }
+
+    async function triggerEvolutionSuccessConnection() {
+      logSim('Simulando sucesso de conexão Evolution...');
+      try {
+        const res = await fetch('mock_evolution.json');
+        const data = await res.json();
+        logSim('Conexão Evolution enviada ao interceptador!');
+      } catch(err) {
+        logSim('Erro ao carregar mock_evolution.json: ' + err.message);
+      }
+    }
+  </script>
+</body>
+</html>

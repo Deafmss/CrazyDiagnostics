@@ -1,0 +1,35 @@
+name: CrazyDiagnostics Validate & Package Extension
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  validate-and-package:
+    name: Validate Manifest & Package Chrome Extension
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate Manifest JSON
+        run: node -e "JSON.parse(require('fs').readFileSync('manifest.json'))"
+
+      - name: Package Extension ZIP
+        run: zip -r crazy-diagnostics-extension.zip . -x "*.git*" "graphify-out/*"
+
+      - name: Upload Extension Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: crazy-diagnostics-extension-zip
+          path: crazy-diagnostics-extension.zip
+          retention-days: 14

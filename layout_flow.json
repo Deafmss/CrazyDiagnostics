@@ -1,0 +1,355 @@
+{
+  "url": "https://crm.datacrazy.io/flow",
+  "title": "CRM Datacrazy",
+  "timestamp": "2026-06-10T21:16:37.369Z",
+  "route": "/flow",
+  "sidebarMenu": [],
+  "activeChat": {
+    "header": null,
+    "selectedItemText": "Minhas Automações",
+    "detailsPanel": null
+  },
+  "kanban": {
+    "columns": []
+  },
+  "automations": {
+    "title": null,
+    "nodes": [
+      {
+        "text": "💭Suporte",
+        "classes": "bb-feedback-button gleap-font gl-block bb-feedback-button--classic-button-style",
+        "id": null,
+        "isSelected": false
+      }
+    ]
+  },
+  "dashboard": [],
+  "controls": [
+    {
+      "type": "button",
+      "text": "Adicionar automação",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-primary border-primary text-primary-foreground hover:bg-primary/90 h-8 rounded-md px-3 min-h-8 w-full gap-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.border-solid > div.flex > div.w-full > div.flex > button.border",
+      "xpath": "//*[@id=\"radix-:r1po:\"]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Minhas Automações",
+      "id": "radix-:r1pp:-trigger-myFlows",
+      "classes": "inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-sm",
+      "selector": "#radix-:r1pp:-trigger-myFlows",
+      "xpath": "//*[@id=\"radix-:r1pp:-trigger-myFlows\"]"
+    },
+    {
+      "type": "button",
+      "text": "Padrão",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-primary border-primary text-primary-foreground hover:bg-primary/90 h-8 rounded-md px-3 min-h-8 justify-start gap-2 mt-1",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.bg-white > div > div.flex > button.border",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Criar nova automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-10 px-4 py-2 min-h-10 gap-2 items-center mt-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.bg-white > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[2]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[3]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[4]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[5]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[6]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[7]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[8]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[9]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[10]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[11]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[12]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[13]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[14]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[15]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[16]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[17]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[18]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[19]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Abrir automação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-8 rounded-md px-3 min-h-8 gap-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.mt-2 > div.grid > div.col-span-1 > div.h-full > div.flex > div.py-3 > button.cursor-pointer",
+      "xpath": "//*[@id=\"radix-:r1pp:-content-myFlows\"]/div[1]/div[2]/div[1]/div[20]/div[1]/button[1]"
+    }
+  ],
+  "forms": [
+    {
+      "type": "input:text",
+      "id": null,
+      "name": null,
+      "placeholder": null,
+      "value": null,
+      "labelText": null,
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-8 px-3 py-2 pl-7",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.border-solid > div.flex > div.w-full > div.flex > div.relative > input.flex"
+    },
+    {
+      "type": "input:text",
+      "id": null,
+      "name": null,
+      "placeholder": "Pesquisar...",
+      "value": null,
+      "labelText": null,
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-8 px-3 py-2 pl-7",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.p-8 > div.flex-1 > div.flex > div.relative > input.flex"
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Fluxo de automações",
+      "classes": "text-lg md:text-2xl font-semibold text-title overflow-hidden text-ellipsis"
+    },
+    {
+      "tag": "H3",
+      "text": "Crie sua nova automação e aumente seus resultados. Lembre-se, não há limites para sua criatividade.",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis mt-4"
+    },
+    {
+      "tag": "H3",
+      "text": "Automação subistitui o atendente responsável no negocio a cada nova mensagem.",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "Captar o lead do instagram e mesclar com o whatasapp",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    },
+    {
+      "tag": "H3",
+      "text": "",
+      "classes": "text-sm font-normal text-subtitle text-ellipsis line-clamp-2 sm:line-clamp-4"
+    }
+  ]
+}

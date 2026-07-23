@@ -1,0 +1,367 @@
+{
+  "url": "https://crm.datacrazy.io/flow/193939e2-0b33-45a1-bb7c-311100d8e1ba",
+  "title": "CRM Datacrazy",
+  "timestamp": "2026-06-10T09:56:59.166Z",
+  "route": "/flow/193939e2-0b33-45a1-bb7c-311100d8e1ba",
+  "sidebarMenu": [],
+  "activeChat": {
+    "header": null,
+    "selectedItemText": null,
+    "detailsPanel": null
+  },
+  "kanban": {
+    "columns": []
+  },
+  "automations": {
+    "title": null,
+    "nodes": [
+      {
+        "text": "Ação | Execute ações no sistema. Clique para adicionar ações: | Criar negócio | Cria um novo negócio para o lead | Adicionar ação | Caso ocorrer erro na execução da ação | Próxima passo | 0 | Sucessos | 0 | Alertas | 0 | Erros",
+        "classes": "react-flow__node react-flow__node-action nopan selectable",
+        "id": "9c79693c-aa0e-4193-9522-a30147c1c62b",
+        "isSelected": false
+      },
+      {
+        "text": "Espera | Espera um determinado tempo para continuar a execução. Adicione um tipo de espera: | Espera de alguns segundos | Espera uma quantidade informada de segundos para continuar a execução | Próximo passo | 2k | Sucessos | 0 | Alertas | 0 | Erros",
+        "classes": "react-flow__node react-flow__node-delay nopan selectable",
+        "id": "cc098e00-5aad-4a0d-b12f-2a5bbf047972",
+        "isSelected": false
+      },
+      {
+        "text": "Início | O gatilho é responsável por acionar a automação. Clique para adicionar um gatilho: | Atendimento iniciado | Quando um atendimento é iniciado | Atendimento iniciado | Quando um atendimento é iniciado | Adicionar gatilho | Quando o evento ocorrer, então | 2k | Sucessos | 0 | Alertas | 0 | Erros",
+        "classes": "react-flow__node react-flow__node-trigger nopan selectable",
+        "id": "eee1dab9-56d6-460b-9d51-9efdd18c1af1",
+        "isSelected": false
+      },
+      {
+        "text": "O objetivo dessa automação é quando um SDR iniciar o atendimento com um lead, automaticamente o mesmo SDR ser atribuído como atendente do contato e do negócio na pipeline de Pré-Vendas. | SDRs cadastrados: | Maria Eduarda | Paola | Juliana | Arthur | Felipe | Giovanna Matias | Ryan",
+        "classes": "react-flow__node react-flow__node-note nopan selectable",
+        "id": "03f13fb8-f278-4171-a4a6-a40e86440e0b",
+        "isSelected": false
+      },
+      {
+        "text": "PAOLA MONTEIRO",
+        "classes": "react-flow__node react-flow__node-note nopan selectable",
+        "id": "49327690-856b-470d-a971-1fe5933676b6",
+        "isSelected": false
+      },
+      {
+        "text": "Essa \"Ação\" serve para que o sistema entenda que precisa criar um negócio dentro da pipeline \"Pré-Vendas\" na etapa de \"Entrada\"",
+        "classes": "react-flow__node react-flow__node-note nopan selectable",
+        "id": "28570547-9e84-422f-bcd9-fcb9f93ef1d5",
+        "isSelected": false
+      },
+      {
+        "text": "💭Suporte",
+        "classes": "bb-feedback-button gleap-font gl-block bb-feedback-button--classic-button-style",
+        "id": null,
+        "isSelected": false
+      }
+    ]
+  },
+  "dashboard": [],
+  "controls": [
+    {
+      "type": "button",
+      "text": "Adicionar automação",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-primary border-primary text-primary-foreground hover:bg-primary/90 h-8 rounded-md px-3 min-h-8 w-full gap-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.border-solid > div.flex > div.w-full > div.flex > button.border",
+      "xpath": "//*[@id=\"radix-:r2ke:\"]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Adicionar condição",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-10 px-4 py-2 min-h-10 border-dashed w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__renderer > div.react-flow__pane > div.react-flow__viewport > div.react-flow__nodes > div.react-flow__node > div.relative > div.bg-white > div.px-4 > div.mt-2 > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Adicionar condição",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-10 px-4 py-2 min-h-10 border-dashed w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__renderer > div.react-flow__pane > div.react-flow__viewport > div.react-flow__nodes > div.react-flow__node > div.relative > div.bg-white > div.px-4 > div.mt-2 > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Adicionar condição",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-10 px-4 py-2 min-h-10 border-dashed w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__renderer > div.react-flow__pane > div.react-flow__viewport > div.react-flow__nodes > div.react-flow__node > div.relative > div.bg-white > div.px-4 > div.mt-2 > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[3]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Adicionar ação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-10 px-4 py-2 min-h-10 border-dashed w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__renderer > div.react-flow__pane > div.react-flow__viewport > div.react-flow__nodes > div.react-flow__node > div.relative > div.bg-white > div.px-4 > div.mt-2 > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[3]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Adicionar condição",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-10 px-4 py-2 min-h-10 border-dashed w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__renderer > div.react-flow__pane > div.react-flow__viewport > div.react-flow__nodes > div.react-flow__node > div.relative > div.bg-white > div.px-4 > div.mt-2 > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[5]/div[1]/div[3]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Adicionar gatilho",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-10 px-4 py-2 min-h-10 border-dashed w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__renderer > div.react-flow__pane > div.react-flow__viewport > div.react-flow__nodes > div.react-flow__node > div.relative > div.bg-white > div.px-4 > div.mt-2 > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Mensagem",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Ações",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[2]"
+    },
+    {
+      "type": "button",
+      "text": "Condições",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[3]"
+    },
+    {
+      "type": "button",
+      "text": "Espera",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[4]"
+    },
+    {
+      "type": "button",
+      "text": "Randomizador",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[5]"
+    },
+    {
+      "type": "button",
+      "text": "API",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[6]"
+    },
+    {
+      "type": "button",
+      "text": "Operações de campos",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[7]"
+    },
+    {
+      "type": "button",
+      "text": "IA",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[8]"
+    },
+    {
+      "type": "button",
+      "text": "JavaScript",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[9]"
+    }
+  ],
+  "forms": [
+    {
+      "type": "input:text",
+      "id": null,
+      "name": null,
+      "placeholder": null,
+      "value": null,
+      "labelText": null,
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-8 px-3 py-2 pl-7",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.border-solid > div.flex > div.w-full > div.flex > div.relative > input.flex"
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Faça filtros para seguir caminhos diferentes. Clique para adicionar uma condição:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Verifica se a conversa possui atendente responsável",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Se esta condição for verdadeira",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Todas as condições forem verdadeiras",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Quando não atender a nenhuma condição",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Faça filtros para seguir caminhos diferentes. Clique para adicionar uma condição:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Verifica se o lead possui um negócio na pipeline",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Se esta condição for verdadeira",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Todas as condições forem verdadeiras",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Quando não atender a nenhuma condição",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Faça filtros para seguir caminhos diferentes. Clique para adicionar uma condição:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Verifica se a conversa possui atendente responsável",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Se esta condição for verdadeira",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Todas as condições forem verdadeiras",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Quando não atender a nenhuma condição",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Execute ações no sistema. Clique para adicionar ações:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Cria um novo negócio para o lead",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Caso ocorrer erro na execução da ação",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Próxima passo",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Faça filtros para seguir caminhos diferentes. Clique para adicionar uma condição:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Verifica se o lead possui um negócio na pipeline",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Se esta condição for verdadeira",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Todas as condições forem verdadeiras",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Quando não atender a nenhuma condição",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Espera um determinado tempo para continuar a execução. Adicione um tipo de espera:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Espera uma quantidade informada de segundos para continuar a execução",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Próximo passo",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "O gatilho é responsável por acionar a automação. Clique para adicionar um gatilho:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Quando um atendimento é iniciado",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Quando um atendimento é iniciado",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Quando o evento ocorrer, então",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Atendente - conversa| lead | negócio - v2",
+      "classes": "text-lg md:text-2xl font-semibold text-title overflow-hidden text-ellipsis select-none"
+    }
+  ]
+}

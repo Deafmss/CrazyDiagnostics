@@ -1,0 +1,84 @@
+{
+  "url": "https://crm.datacrazy.io/config/integrations",
+  "title": "CRM Datacrazy",
+  "timestamp": "2026-06-09T18:50:12.428Z",
+  "route": "/config/integrations",
+  "sidebarMenu": [],
+  "activeChat": {
+    "header": null,
+    "selectedItemText": null,
+    "detailsPanel": null
+  },
+  "kanban": {
+    "columns": []
+  },
+  "automations": {
+    "title": null,
+    "nodes": [
+      {
+        "text": "💭Suporte",
+        "classes": "bb-feedback-button gleap-font gl-block bb-feedback-button--classic-button-style",
+        "id": null,
+        "isSelected": false
+      }
+    ]
+  },
+  "dashboard": [],
+  "controls": [
+    {
+      "type": "button",
+      "text": "Criar",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-primary border-primary text-primary-foreground hover:bg-primary/90 h-8 rounded-md px-3 min-h-8",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.flex > div.flex > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "peer inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=unchecked]:bg-input",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.grid > div.border > div.flex > div.flex > div.w-full > button.peer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[2]/button[1]"
+    }
+  ],
+  "forms": [
+    {
+      "type": "input:text",
+      "id": null,
+      "name": null,
+      "placeholder": "Pesquisar...",
+      "value": null,
+      "labelText": null,
+      "classes": "flex rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-8 px-3 py-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.flex > div.flex > div.flex > input.flex"
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Integrações",
+      "classes": "text-lg md:text-2xl font-semibold text-title overflow-hidden text-ellipsis"
+    },
+    {
+      "tag": "H3",
+      "text": "Automações via webhooks",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis"
+    },
+    {
+      "tag": "H3",
+      "text": "1 resultados",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis"
+    },
+    {
+      "tag": "H3",
+      "text": "Entrada de Negócios",
+      "classes": "font-semibold tracking-tight text-md"
+    },
+    {
+      "tag": "H3",
+      "text": "Nova integração",
+      "classes": "tracking-tight text-md font-medium truncate mt-2"
+    }
+  ]
+}

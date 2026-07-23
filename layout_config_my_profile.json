@@ -1,0 +1,217 @@
+{
+  "url": "https://crm.datacrazy.io/config/my-profile",
+  "title": "CRM Datacrazy",
+  "timestamp": "2026-06-11T13:59:05.635Z",
+  "route": "/config/my-profile",
+  "sidebarMenu": [],
+  "activeChat": {
+    "header": null,
+    "selectedItemText": null,
+    "detailsPanel": null
+  },
+  "kanban": {
+    "columns": []
+  },
+  "automations": {
+    "title": null,
+    "nodes": [
+      {
+        "text": "Alterar senha",
+        "classes": "cursor-pointer select-none items-center justify-center whitespace-nowrap rounded-md text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-input bg-white h-10 px-4 py-2 min-h-10 block w-full",
+        "id": null,
+        "isSelected": false
+      },
+      {
+        "text": "💭Suporte",
+        "classes": "bb-feedback-button gleap-font gl-block bb-feedback-button--classic-button-style",
+        "id": null,
+        "isSelected": false
+      }
+    ]
+  },
+  "dashboard": [],
+  "controls": [
+    {
+      "type": "button",
+      "text": "Sair",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 rounded-md px-3 min-h-8 gap-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div.relative > div.absolute > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Alterar senha",
+      "id": ":r48:-form-item",
+      "classes": "cursor-pointer select-none items-center justify-center whitespace-nowrap rounded-md text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-input bg-white h-10 px-4 py-2 min-h-10 block w-full",
+      "selector": "#:r48:-form-item",
+      "xpath": "//*[@id=\":r48:-form-item\"]"
+    },
+    {
+      "type": "button",
+      "text": "Salvar",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-primary border-primary text-primary-foreground hover:bg-primary/90 h-8 rounded-md px-3 min-h-8 w-20",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > form > div.col-span-2 > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[3]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Escuro",
+      "id": null,
+      "classes": "flex h-10 w-full items-center justify-between rounded-md border border-solid border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus-visible:outline-none focus-visible:border-blue-400 focus:ring-1 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div.flex > div.flex > div.w-full > div.flex > button.flex",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "on",
+      "id": null,
+      "classes": "peer inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=unchecked]:bg-input",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div.flex > div.flex > div.w-full > button.peer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Grupo Lazari",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 bg-transparent border-none h-10 min-h-10 p-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div.rounded-md > div.scrollbar-sm > table.w-full > tbody > tr.border-b > td.align-middle > div.flex > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Toni Barros Jewelry",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 bg-transparent border-none h-10 min-h-10 p-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div.rounded-md > div.scrollbar-sm > table.w-full > tbody > tr.border-b > td.align-middle > div.flex > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Inovatec",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 bg-transparent border-none h-10 min-h-10 p-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div.rounded-md > div.scrollbar-sm > table.w-full > tbody > tr.border-b > td.align-middle > div.flex > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Ortiz clínica da coluna",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 bg-transparent border-none h-10 min-h-10 p-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div.rounded-md > div.scrollbar-sm > table.w-full > tbody > tr.border-b > td.align-middle > div.flex > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[4]/td[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "THS CONNECT",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 bg-transparent border-none h-10 min-h-10 p-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div.rounded-md > div.scrollbar-sm > table.w-full > tbody > tr.border-b > td.align-middle > div.flex > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[5]/td[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Excluir conta",
+      "id": null,
+      "classes": "border cursor-pointer select-none justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-destructive text-destructive-foreground hover:bg-destructive/90 h-8 rounded-md px-3 min-h-8 flex items-center gap-2 shrink-0",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div > div.flex > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/button[1]"
+    }
+  ],
+  "forms": [
+    {
+      "type": "input:text",
+      "id": ":r45:-form-item",
+      "name": "name",
+      "placeholder": "Nome do usuário",
+      "value": "Murillo de Souza soares",
+      "labelText": "Nome",
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-10 px-3 py-2",
+      "selector": "#:r45:-form-item"
+    },
+    {
+      "type": "input:tel",
+      "id": null,
+      "name": null,
+      "placeholder": "(xx) xxxx-xxxx",
+      "value": "+55",
+      "labelText": null,
+      "classes": "form-control ",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > form > div.flex > div.w-full > div.space-y-1 > div > input.form-control"
+    },
+    {
+      "type": "input:text",
+      "id": ":r47:-form-item",
+      "name": "email",
+      "placeholder": "E-mail do usuário",
+      "value": "murilo.souza@datacrazy.io",
+      "labelText": "Email",
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-10 px-3 py-2",
+      "selector": "#:r47:-form-item"
+    },
+    {
+      "type": "input:file",
+      "id": "picture",
+      "name": null,
+      "placeholder": null,
+      "value": null,
+      "labelText": null,
+      "classes": "",
+      "selector": "#picture"
+    },
+    {
+      "type": "input:text",
+      "id": null,
+      "name": null,
+      "placeholder": "Pesquisar...",
+      "value": null,
+      "labelText": null,
+      "classes": "flex rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-8 px-3 py-2 w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div.flex > div.flex > div.flex > input.flex"
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Murillo de Souza soares",
+      "classes": "text-lg md:text-2xl font-semibold text-title overflow-hidden text-ellipsis"
+    },
+    {
+      "tag": "H3",
+      "text": "murilo.souza@datacrazy.io",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis"
+    },
+    {
+      "tag": "H3",
+      "text": "04 de maio de 2026",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Suas informações de cadastro e login",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis mb-4"
+    },
+    {
+      "tag": "H3",
+      "text": "Faça o upload da sua imagem de perfil aqui",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis mb-4"
+    },
+    {
+      "tag": "H3",
+      "text": "Personalize a aparência do app selecionando o tema",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis mb-4"
+    },
+    {
+      "tag": "H3",
+      "text": "Adicione uma camada extra de segurança à sua conta. Um código será enviado ao seu e-mail a cada login.",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis mb-4"
+    },
+    {
+      "tag": "H3",
+      "text": "Empresas que você possui ou participa",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis mb-4"
+    }
+  ]
+}

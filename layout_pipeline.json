@@ -1,0 +1,183 @@
+{
+  "url": "https://crm.datacrazy.io/pipelines/cfc6e6bf-c585-498b-be0e-b5c10a53dbe7",
+  "title": "CRM Datacrazy",
+  "timestamp": "2026-06-10T21:16:27.532Z",
+  "route": "/pipelines/cfc6e6bf-c585-498b-be0e-b5c10a53dbe7",
+  "sidebarMenu": [],
+  "activeChat": {
+    "header": null,
+    "selectedItemText": null,
+    "detailsPanel": null
+  },
+  "kanban": {
+    "columns": []
+  },
+  "automations": {
+    "title": null,
+    "nodes": [
+      {
+        "text": "💭Suporte",
+        "classes": "bb-feedback-button gleap-font gl-block bb-feedback-button--classic-button-style",
+        "id": null,
+        "isSelected": false
+      }
+    ]
+  },
+  "dashboard": [],
+  "controls": [
+    {
+      "type": "button",
+      "text": "Nova pipeline",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-primary border-primary text-primary-foreground hover:bg-primary/90 h-8 rounded-md px-3 min-h-8 w-full mb-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.border-solid > div.flex > div > button.border",
+      "xpath": "//*[@id=\"radix-:r1l0:\"]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Filtros",
+      "id": null,
+      "classes": "",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.flex-1 > div.w-full > div.flex > div.flex > div.flex > div.flex > button",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Filtros",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-input bg-white h-8 rounded-md px-3 min-h-8 border-dashed",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.flex-1 > div.w-full > div.flex > div.flex > div.flex > div.flex > button > div > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/button[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Ordenação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-input bg-white h-8 rounded-md px-3 min-h-8 border-dashed gap-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.flex-1 > div.w-full > div.flex > div.flex > div.flex > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Novo negócio",
+      "id": "createBusinessButton",
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-input bg-white h-8 rounded-md px-3 min-h-8 rounded-t-none font-normal text-slate-600 rounded-b-xl border-b-0 border-x-0 gap-1 hover:bg-accent",
+      "selector": "#createBusinessButton",
+      "xpath": "//*[@id=\"createBusinessButton\"]"
+    },
+    {
+      "type": "button",
+      "text": "Novo negócio",
+      "id": "createBusinessButton",
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-input bg-white h-8 rounded-md px-3 min-h-8 rounded-t-none font-normal text-slate-600 rounded-b-xl border-b-0 border-x-0 gap-1 hover:bg-accent",
+      "selector": "#createBusinessButton",
+      "xpath": "//*[@id=\"createBusinessButton\"]"
+    },
+    {
+      "type": "button",
+      "text": "Novo negócio",
+      "id": "createBusinessButton",
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-input bg-white h-8 rounded-md px-3 min-h-8 rounded-t-none font-normal text-slate-600 rounded-b-xl border-b-0 border-x-0 gap-1 hover:bg-accent",
+      "selector": "#createBusinessButton",
+      "xpath": "//*[@id=\"createBusinessButton\"]"
+    },
+    {
+      "type": "button",
+      "text": "Novo negócio",
+      "id": "createBusinessButton",
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-input bg-white h-8 rounded-md px-3 min-h-8 rounded-t-none font-normal text-slate-600 rounded-b-xl border-b-0 border-x-0 gap-1 hover:bg-accent",
+      "selector": "#createBusinessButton",
+      "xpath": "//*[@id=\"createBusinessButton\"]"
+    },
+    {
+      "type": "button",
+      "text": "Novo negócio",
+      "id": "createBusinessButton",
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-input bg-white h-8 rounded-md px-3 min-h-8 rounded-t-none font-normal text-slate-600 rounded-b-xl border-b-0 border-x-0 gap-1 hover:bg-accent",
+      "selector": "#createBusinessButton",
+      "xpath": "//*[@id=\"createBusinessButton\"]"
+    },
+    {
+      "type": "button",
+      "text": "Nova coluna",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 bg-gray-200 text-slate-500 gap-2 w-72",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.flex-1 > div.w-full > div.row-span-1 > div.h-full > div.row-span-1 > div.h-full > div > div > button.border",
+      "xpath": "//*[@id=\"kanban-list\"]/div[1]/div[6]/button[1]"
+    }
+  ],
+  "forms": [
+    {
+      "type": "input:text",
+      "id": null,
+      "name": "search",
+      "placeholder": "Pesquisar...",
+      "value": null,
+      "labelText": null,
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-8 px-3 py-2 pl-7",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.flex-1 > div.w-full > div.flex > div.flex > div.flex > div.relative > input.flex"
+    },
+    {
+      "type": "input:file",
+      "id": null,
+      "name": null,
+      "placeholder": null,
+      "value": null,
+      "labelText": null,
+      "classes": "hidden",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > input.hidden"
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "R$ 0,00",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis min-w-14 w-2/5 text-left text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Nenhum negócio",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "R$ 0,00",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis min-w-14 w-2/5 text-left text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Nenhum negócio",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "R$ 0,00",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis min-w-14 w-2/5 text-left text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Nenhum negócio",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "R$ 0,00",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis min-w-14 w-2/5 text-left text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Nenhum negócio",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "R$ 0,00",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis min-w-14 w-2/5 text-left text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Nenhum negócio",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    }
+  ]
+}

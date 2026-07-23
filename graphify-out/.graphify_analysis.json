@@ -1,0 +1,309 @@
+{
+  "communities": {
+    "0": [
+      "background",
+      "background_connwritetimeouts",
+      "background_endpointfailures",
+      "background_fetchlocalservertoken",
+      "background_generateid",
+      "background_getroutesegment",
+      "background_gettabconnections",
+      "background_gettablogs",
+      "background_issamearea",
+      "background_logwritetimeouts",
+      "background_matchesactivecompany",
+      "background_matchesactiveconnection",
+      "background_matchesactiveentity",
+      "background_matchesactivelead",
+      "background_pendinglogqueues",
+      "background_processlogqueue",
+      "background_savetabconnections",
+      "background_savetablogs",
+      "background_syncerrortodisk",
+      "background_syncremoterules",
+      "background_tabconnscache",
+      "background_tablogscache",
+      "background_trackendpointfailure",
+      "background_trackwsdisconnection",
+      "background_updatebadge",
+      "background_wsdisconnections",
+      "translator",
+      "translator_crazytranslator"
+    ],
+    "1": [
+      "manifest",
+      "manifest_background",
+      "manifest_background_service_worker",
+      "manifest_content_scripts",
+      "manifest_description",
+      "manifest_devtools_page",
+      "manifest_host_permissions",
+      "manifest_icons",
+      "manifest_icons_128",
+      "manifest_icons_16",
+      "manifest_icons_32",
+      "manifest_icons_48",
+      "manifest_json_ref_datacrazy_io",
+      "manifest_json_ref_http_localhost",
+      "manifest_json_ref_storage",
+      "manifest_manifest_version",
+      "manifest_name",
+      "manifest_permissions",
+      "manifest_version",
+      "manifest_web_accessible_resources",
+      "ref_alarms",
+      "ref_http_127_0_0_1",
+      "ref_tabs",
+      "ref_unlimitedstorage"
+    ],
+    "2": [
+      "injected",
+      "injected_cleanstacktrace",
+      "injected_detectconnections",
+      "injected_detectdoublesubmit",
+      "injected_extracttenantidfromjwt",
+      "injected_fetchconnectionsinvisibly",
+      "injected_formatconsoleargs",
+      "injected_getauthheadervalue",
+      "injected_isthirdpartytrackingurl",
+      "injected_monitorjwtexpiration",
+      "injected_parsestack",
+      "injected_processfetchresponseasync",
+      "injected_scanjsonforerrors",
+      "injected_scanobjectforautomationinfo",
+      "injected_scanobjectforcompanyinfo",
+      "injected_scanobjectforcontactinfo",
+      "injected_senderror",
+      "injected_sendmessagetocontent",
+      "injected_shouldignore",
+      "injected_trackrequest",
+      "injected_updatetenantid",
+      "injected_xmlhttprequest_send",
+      "injected_xmlhttprequest_setrequestheader"
+    ],
+    "3": [
+      "popup",
+      "popup_createlogcard",
+      "popup_escapehtml",
+      "popup_formattime",
+      "popup_getcurrentpagearea",
+      "popup_geterrorarea",
+      "popup_getfriendlyareaname",
+      "popup_getroutesegment",
+      "popup_inittabcontext",
+      "popup_issamearea",
+      "popup_issupportedurl",
+      "popup_loadconnections",
+      "popup_loadlogs",
+      "popup_matchesactivecompany",
+      "popup_matchesactivecompanyforconnection",
+      "popup_matchesactiveconnection",
+      "popup_matchesactiveentity",
+      "popup_matchesactivelead",
+      "popup_renderlogs",
+      "popup_setfooterstatus",
+      "popup_updatebadgescount",
+      "popup_updateconnectionsui",
+      "popup_updateemptystate"
+    ],
+    "4": [
+      "crm_mapper_content",
+      "crm_mapper_content_getelementselector",
+      "crm_mapper_content_getelementxpath",
+      "crm_mapper_content_scrapeactivechatinfo",
+      "crm_mapper_content_scrapeautomations",
+      "crm_mapper_content_scrapecontrols",
+      "crm_mapper_content_scrapedashboard",
+      "crm_mapper_content_scrapeforms",
+      "crm_mapper_content_scrapeiframes",
+      "crm_mapper_content_scrapekanban",
+      "crm_mapper_content_scrapemodalsandoverlays",
+      "crm_mapper_content_scrapesidebarmenu",
+      "crm_mapper_content_scrapetabsandpanels",
+      "crm_mapper_content_synclayout",
+      "crm_mapper_content_triggersync"
+    ],
+    "5": [
+      "crm_mapper_manifest",
+      "crm_mapper_manifest_background",
+      "crm_mapper_manifest_background_service_worker",
+      "crm_mapper_manifest_content_scripts",
+      "crm_mapper_manifest_description",
+      "crm_mapper_manifest_host_permissions",
+      "crm_mapper_manifest_json_ref_datacrazy_io",
+      "crm_mapper_manifest_json_ref_http_localhost",
+      "crm_mapper_manifest_json_ref_storage",
+      "crm_mapper_manifest_manifest_version",
+      "crm_mapper_manifest_name",
+      "crm_mapper_manifest_permissions",
+      "crm_mapper_manifest_version",
+      "ref_activetab"
+    ],
+    "6": [
+      "content",
+      "content_getcarddetails",
+      "content_getpagecontext",
+      "content_iswarningorerrorcolor",
+      "content_mergecontexts",
+      "content_reporttoast",
+      "content_resetclickedcontext",
+      "content_scandomforerrors",
+      "content_shouldreporttoast"
+    ],
+    "7": [
+      "manifest_action",
+      "manifest_action_default_icon",
+      "manifest_action_default_popup",
+      "manifest_action_default_title",
+      "manifest_default_icon_128",
+      "manifest_default_icon_16",
+      "manifest_default_icon_32",
+      "manifest_default_icon_48"
+    ],
+    "8": [
+      "crm_mapper_dev_server",
+      "crm_mapper_dev_server_crypto",
+      "crm_mapper_dev_server_file_path",
+      "crm_mapper_dev_server_fs",
+      "crm_mapper_dev_server_http",
+      "crm_mapper_dev_server_path",
+      "crm_mapper_dev_server_server"
+    ],
+    "9": [
+      "crm_mapper_background"
+    ],
+    "10": [
+      "devtools"
+    ],
+    "11": [
+      "injected_xmlhttprequest_open"
+    ]
+  },
+  "cohesion": {
+    "0": 0.12169312169312169,
+    "1": 0.08333333333333333,
+    "2": 0.18972332015810275,
+    "3": 0.2134387351778656,
+    "4": 0.26666666666666666,
+    "5": 0.14285714285714285,
+    "6": 0.3611111111111111,
+    "7": 0.25,
+    "8": 0.2857142857142857,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0
+  },
+  "gods": [
+    {
+      "id": "crm_mapper_content_synclayout",
+      "label": "syncLayout()",
+      "degree": 12
+    },
+    {
+      "id": "background_processlogqueue",
+      "label": "processLogQueue()",
+      "degree": 10
+    },
+    {
+      "id": "popup_renderlogs",
+      "label": "renderLogs()",
+      "degree": 10
+    },
+    {
+      "id": "background_updatebadge",
+      "label": "updateBadge()",
+      "degree": 9
+    },
+    {
+      "id": "popup_loadlogs",
+      "label": "loadLogs()",
+      "degree": 9
+    },
+    {
+      "id": "popup_updatebadgescount",
+      "label": "updateBadgesCount()",
+      "degree": 9
+    },
+    {
+      "id": "translator_crazytranslator",
+      "label": "CrazyTranslator",
+      "degree": 9
+    },
+    {
+      "id": "injected_senderror",
+      "label": "sendError()",
+      "degree": 7
+    },
+    {
+      "id": "injected_processfetchresponseasync",
+      "label": "processFetchResponseAsync()",
+      "degree": 7
+    },
+    {
+      "id": "popup_createlogcard",
+      "label": "createLogCard()",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "syncRemoteRules()",
+      "target": "CrazyTranslator",
+      "source_files": [
+        "background.js",
+        "translator.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `syncRemoteRules()` unexpectedly reaches hub `CrazyTranslator`"
+    },
+    {
+      "source": "getErrorArea()",
+      "target": "CrazyTranslator",
+      "source_files": [
+        "popup.js",
+        "translator.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "matchesActiveConnection()",
+      "target": "CrazyTranslator",
+      "source_files": [
+        "popup.js",
+        "translator.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "updateBadgesCount()",
+      "target": "CrazyTranslator",
+      "source_files": [
+        "popup.js",
+        "translator.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "renderLogs()",
+      "target": "CrazyTranslator",
+      "source_files": [
+        "popup.js",
+        "translator.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

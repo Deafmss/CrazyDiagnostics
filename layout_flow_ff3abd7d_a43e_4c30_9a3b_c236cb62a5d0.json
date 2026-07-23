@@ -1,0 +1,205 @@
+{
+  "url": "https://crm.datacrazy.io/flow/ff3abd7d-a43e-4c30-9a3b-c236cb62a5d0",
+  "title": "CRM Datacrazy",
+  "timestamp": "2026-06-10T21:17:08.059Z",
+  "route": "/flow/ff3abd7d-a43e-4c30-9a3b-c236cb62a5d0",
+  "sidebarMenu": [],
+  "activeChat": {
+    "header": null,
+    "selectedItemText": "Entraram",
+    "detailsPanel": null
+  },
+  "kanban": {
+    "columns": []
+  },
+  "automations": {
+    "title": null,
+    "nodes": [
+      {
+        "text": "2° | 07 de junho de 2026 15:38:40 | Entrou no bloco | Mensagem | Envie e receba mensagens. Clique para adicionar uma mensagem: | Mensagem de texto | Perdeu | Caso ocorrer erro no envio da mensagem | Próximo passo | 0 | Sucessos | 0 | Alertas | 1 | Erros",
+        "classes": "react-flow__node react-flow__node-chat nopan selected selectable",
+        "id": "c9004b99-e281-45fa-825a-829545af0fb7",
+        "isSelected": true
+      },
+      {
+        "text": "💭Suporte",
+        "classes": "bb-feedback-button gleap-font gl-block bb-feedback-button--classic-button-style",
+        "id": null,
+        "isSelected": false
+      }
+    ]
+  },
+  "dashboard": [],
+  "controls": [
+    {
+      "type": "button",
+      "text": "Adicionar automação",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-primary border-primary text-primary-foreground hover:bg-primary/90 h-8 rounded-md px-3 min-h-8 w-full gap-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.border-solid > div.flex > div.w-full > div.flex > button.border",
+      "xpath": "//*[@id=\"radix-:r1po:\"]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Adicionar gatilho",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-10 px-4 py-2 min-h-10 border-dashed w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__renderer > div.react-flow__pane > div.react-flow__viewport > div.react-flow__nodes > div.react-flow__node > div.relative > div.bg-white > div.px-4 > div.mt-2 > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Mensagem",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Ações",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[2]"
+    },
+    {
+      "type": "button",
+      "text": "Condições",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[3]"
+    },
+    {
+      "type": "button",
+      "text": "Espera",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[4]"
+    },
+    {
+      "type": "button",
+      "text": "Randomizador",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[5]"
+    },
+    {
+      "type": "button",
+      "text": "API",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[6]"
+    },
+    {
+      "type": "button",
+      "text": "Operações de campos",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[7]"
+    },
+    {
+      "type": "button",
+      "text": "IA",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[8]"
+    },
+    {
+      "type": "button",
+      "text": "JavaScript",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 min-h-10 items-center gap-2 border-dashed hover:border-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__panel > div.h-full > div > div.flex > button.border",
+      "xpath": "//*[@id=\"flow-menu\"]/div[1]/div[1]/button[9]"
+    },
+    {
+      "type": "button",
+      "text": "Última semana",
+      "id": null,
+      "classes": "flex items-center justify-between rounded-md border border-input bg-background ring-offset-background placeholder:text-muted-foreground focus:outline-none focus-visible:outline-none focus-visible:border-blue-400 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 h-auto p-0 border-none text-2xs focus:ring-0 ml-auto w-28 flex-none",
+      "selector": "div.fixed > div.pt-4 > div.flex > div.ring-offset-background > div.flex > div.flex > button.flex",
+      "xpath": "//*[@id=\"radix-:r1rb:-content-error\"]/div[1]/div[1]/button[1]"
+    }
+  ],
+  "forms": [
+    {
+      "type": "input:text",
+      "id": null,
+      "name": null,
+      "placeholder": null,
+      "value": null,
+      "labelText": null,
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-8 px-3 py-2 pl-7",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.border-solid > div.flex > div.w-full > div.flex > div.relative > input.flex"
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "O gatilho é responsável por acionar a automação. Clique para adicionar um gatilho:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Permite você executar a automação manualmente a partir de uma seleção ou filtros de leads ou pelo contato do multi-atendimento",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Quando um negócio é criado em uma etapa.",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Quando o evento ocorrer, então",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Envie e receba mensagens. Clique para adicionar uma mensagem:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Perdeu",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Caso ocorrer erro no envio da mensagem",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Próximo passo",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "testes",
+      "classes": "text-lg md:text-2xl font-semibold text-title overflow-hidden text-ellipsis select-none"
+    },
+    {
+      "tag": "H3",
+      "text": "Murillo Souza",
+      "classes": "text-[9px] leading-none font-normal text-subtitle overflow-hidden truncate"
+    },
+    {
+      "tag": "H3",
+      "text": "Murillo Souza",
+      "classes": "text-[9px] leading-none font-normal text-subtitle overflow-hidden truncate"
+    },
+    {
+      "tag": "H3",
+      "text": "556296081797",
+      "classes": "text-[9px] leading-none font-normal text-subtitle overflow-hidden truncate"
+    }
+  ]
+}

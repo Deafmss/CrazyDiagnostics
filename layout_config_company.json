@@ -1,0 +1,251 @@
+{
+  "url": "https://crm.datacrazy.io/config/company",
+  "title": "CRM Datacrazy",
+  "timestamp": "2026-06-11T14:04:40.809Z",
+  "route": "/config/company",
+  "sidebarMenu": [],
+  "activeChat": {
+    "header": null,
+    "selectedItemText": null,
+    "detailsPanel": null
+  },
+  "kanban": {
+    "columns": []
+  },
+  "automations": {
+    "title": null,
+    "nodes": [
+      {
+        "text": "💭Suporte",
+        "classes": "bb-feedback-button gleap-font gl-block bb-feedback-button--classic-button-style",
+        "id": null,
+        "isSelected": false
+      }
+    ]
+  },
+  "dashboard": [],
+  "controls": [
+    {
+      "type": "button",
+      "text": "Editar",
+      "id": null,
+      "classes": "justify-center font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-accent border border-input hover:bg-accent hover:text-accent-foreground px-2.5 flex gap-1 items-center text-sm rounded-none h-8 bg-white border-r-0 last:border-r first:rounded-l-md last:rounded-r-md data-[state=on]:text-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div.py-5 > div.self-end > div.flex > button.justify-center",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Membros",
+      "id": null,
+      "classes": "justify-center font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-accent border border-input hover:bg-accent hover:text-accent-foreground px-2.5 flex gap-1 items-center text-sm rounded-none h-8 bg-white border-r-0 last:border-r first:rounded-l-md last:rounded-r-md data-[state=on]:text-primary",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div.py-5 > div.self-end > div.flex > button.justify-center",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/button[2]"
+    },
+    {
+      "type": "button",
+      "text": "Pessoa Juridica",
+      "id": null,
+      "classes": "flex h-10 w-full items-center justify-between rounded-md border border-solid border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus-visible:outline-none focus-visible:border-blue-400 focus:ring-1 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div.bg-white > div.w-full > div.flex > div.w-1/2 > div.space-y-1 > button.flex",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Brasil",
+      "id": null,
+      "classes": "flex items-center justify-between w-full outline-none transition-colors text-sm h-10 px-3 py-2 rounded-md border border-solid border-input bg-background ring-offset-background placeholder:text-muted-foreground focus:outline-none focus-visible:outline-none focus-visible:border-blue-400 focus:ring-1 disabled:cursor-not-allowed disabled:opacity-50",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div.bg-white > div.w-full > div.flex > div.w-full > div.grid > div.space-y-1 > button.flex",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Salvar",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-primary border-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 min-h-10 self-end",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div.bg-white > div.w-full > div.flex > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[5]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Excluir Empresa",
+      "id": null,
+      "classes": "border cursor-pointer select-none justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-destructive text-destructive-foreground hover:bg-destructive/90 h-8 rounded-md px-3 min-h-8 flex items-center gap-2 shrink-0",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div > div.flex > button.border",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/button[1]"
+    }
+  ],
+  "forms": [
+    {
+      "type": "input:text",
+      "id": ":r58:-form-item",
+      "name": "name",
+      "placeholder": "Preencha com o nome da sua empresa",
+      "value": "Inovatec",
+      "labelText": "Nome da empresa",
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-10 px-3 py-2",
+      "selector": "#:r58:-form-item"
+    },
+    {
+      "type": "input:email",
+      "id": ":r59:-form-item",
+      "name": "email",
+      "placeholder": "Preencha com o E-mail da sua empresa",
+      "value": "inovatecnoots@gmail.com",
+      "labelText": "E-mail da empresa",
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-10 px-3 py-2",
+      "selector": "#:r59:-form-item"
+    },
+    {
+      "type": "input:text",
+      "id": ":r5a:-form-item",
+      "name": "niche",
+      "placeholder": "Exemplo: Vendas",
+      "value": "Ecommerce",
+      "labelText": "Nicho",
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-10 px-3 py-2",
+      "selector": "#:r5a:-form-item"
+    },
+    {
+      "type": "input:tel",
+      "id": null,
+      "name": null,
+      "placeholder": "(xx) xxxx-xxxx",
+      "value": "+55 (43) 984820659",
+      "labelText": null,
+      "classes": "form-control ",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div.bg-white > div.w-full > div.flex > div.w-1/2 > div.space-y-1 > div > input.form-control"
+    },
+    {
+      "type": "input:file",
+      "id": "picture",
+      "name": null,
+      "placeholder": null,
+      "value": null,
+      "labelText": null,
+      "classes": "",
+      "selector": "#picture"
+    },
+    {
+      "type": "input:text",
+      "id": ":r5f:-form-item",
+      "name": "taxId",
+      "placeholder": "Informe o CPF ou CNPJ",
+      "value": null,
+      "labelText": "Documento",
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-10 px-3 py-2",
+      "selector": "#:r5f:-form-item"
+    },
+    {
+      "type": "input:text",
+      "id": null,
+      "name": "address.zip",
+      "placeholder": "ex: 12345-678",
+      "value": "86020-381",
+      "labelText": null,
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-10 px-3 py-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.overflow-y-auto > div.px-5 > div.row-span-7 > div.py-4 > div.flex > div > div.bg-white > div.w-full > div.flex > div.w-full > div.grid > div.space-y-1 > div.space-y-1 > input.flex"
+    },
+    {
+      "type": "input:text",
+      "id": ":r5j:-form-item",
+      "name": "address.address",
+      "placeholder": "ex: Av. Paulista",
+      "value": "Rua Pio XII",
+      "labelText": "Endereço",
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-10 px-3 py-2",
+      "selector": "#:r5j:-form-item"
+    },
+    {
+      "type": "input:text",
+      "id": ":r5k:-form-item",
+      "name": "address.number",
+      "placeholder": "ex: 123",
+      "value": null,
+      "labelText": "Número",
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-10 px-3 py-2",
+      "selector": "#:r5k:-form-item"
+    },
+    {
+      "type": "input:text",
+      "id": ":r5l:-form-item",
+      "name": "address.complement",
+      "placeholder": "ex: Apto 101",
+      "value": null,
+      "labelText": "Complemento",
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-10 px-3 py-2",
+      "selector": "#:r5l:-form-item"
+    },
+    {
+      "type": "input:text",
+      "id": ":r5m:-form-item",
+      "name": "address.block",
+      "placeholder": "ex: Centro",
+      "value": "Centro",
+      "labelText": "Bairro",
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-10 px-3 py-2",
+      "selector": "#:r5m:-form-item"
+    },
+    {
+      "type": "input:text",
+      "id": ":r5n:-form-item",
+      "name": "address.city",
+      "placeholder": "ex: São Paulo",
+      "value": "Londrina",
+      "labelText": "Cidade",
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-10 px-3 py-2",
+      "selector": "#:r5n:-form-item"
+    },
+    {
+      "type": "input:text",
+      "id": ":r5o:-form-item",
+      "name": "address.state",
+      "placeholder": "ex: SP",
+      "value": "PR",
+      "labelText": "UF",
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-10 px-3 py-2",
+      "selector": "#:r5o:-form-item"
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Inovatec",
+      "classes": "text-lg md:text-2xl font-semibold text-title overflow-hidden text-ellipsis"
+    },
+    {
+      "tag": "H3",
+      "text": "inovatecnoots@gmail.com",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis"
+    },
+    {
+      "tag": "H3",
+      "text": "25 de maio de 2026",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Londrina, PR",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Principais informações sobre sua empresa",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis mb-4"
+    },
+    {
+      "tag": "H3",
+      "text": "Faça o upload do logotipo da sua empresa aqui",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis mb-4"
+    },
+    {
+      "tag": "H3",
+      "text": "Cadastre os dados da sua empresa",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis mb-4"
+    },
+    {
+      "tag": "H3",
+      "text": "Endereço completo da sua empresa",
+      "classes": "text-sm font-normal text-subtitle overflow-hidden text-ellipsis mb-4"
+    }
+  ]
+}

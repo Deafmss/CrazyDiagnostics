@@ -1,0 +1,73 @@
+{
+  "manifest_version": 3,
+  "name": "CrazyDiagnostics - DataCrazy CRM Helper",
+  "version": "1.0.0",
+  "description": "Diagnóstico inteligente de erros de rede, fluxos, APIs e console de forma amigável no CRM DataCrazy.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "alarms",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "*://*.datacrazy.io/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "devtools_page": "devtools.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.datacrazy.io/*",
+        "*://localhost/*",
+        "*://127.0.0.1/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "*://*.datacrazy.io/*",
+        "*://localhost/*",
+        "*://127.0.0.1/*"
+      ],
+      "js": [
+        "crm-mapper/content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "CrazyDiagnostics Feed",
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "injected.js"
+      ],
+      "matches": [
+        "*://*.datacrazy.io/*",
+        "*://localhost/*",
+        "*://127.0.0.1/*"
+      ]
+    }
+  ]
+}

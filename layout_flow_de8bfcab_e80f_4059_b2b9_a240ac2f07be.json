@@ -1,0 +1,337 @@
+{
+  "url": "https://crm.datacrazy.io/flow/de8bfcab-e80f-4059-b2b9-a240ac2f07be",
+  "title": "CRM Datacrazy",
+  "timestamp": "2026-06-11T14:38:41.929Z",
+  "route": "/flow/de8bfcab-e80f-4059-b2b9-a240ac2f07be",
+  "sidebarMenu": [],
+  "activeChat": {
+    "header": null,
+    "selectedItemText": null,
+    "detailsPanel": null
+  },
+  "kanban": {
+    "columns": []
+  },
+  "automations": {
+    "title": null,
+    "nodes": [
+      {
+        "text": "Mensagem | Envie e receba mensagens. Clique para adicionar uma mensagem: | Mensagem de texto | {message} | Caso ocorrer erro no envio da mensagem | Próximo passo | 2k | Sucessos | 0 | Alertas | 106 | Erros",
+        "classes": "react-flow__node react-flow__node-chat nopan selectable",
+        "id": "6e51be4c-daa7-4d90-be77-29ba329eb74b",
+        "isSelected": false
+      },
+      {
+        "text": "Condição | Faça filtros para seguir caminhos diferentes. Clique para adicionar uma condição: | Lead existente | Verifica se o lead já está cadastrado | Se esta condição for verdadeira | Adicionar condição | Todas as condições forem verdadeiras | Quando não atender a nenhuma condição | 2k | Sucessos | 0 | Alertas | 0 | Erros",
+        "classes": "react-flow__node react-flow__node-condition nopan selectable",
+        "id": "c9516bf7-7d20-4f7b-bdf3-ec45709e9093",
+        "isSelected": false
+      },
+      {
+        "text": "Espera | Espera um determinado tempo para continuar a execução. Adicione um tipo de espera: | Espera de alguns segundos | Espera uma quantidade informada de segundos para continuar a execução | Próximo passo | 0 | Sucessos | 0 | Alertas | 0 | Erros",
+        "classes": "react-flow__node react-flow__node-delay nopan selectable",
+        "id": "dae658e0-affb-44c6-9d11-1bf49bd53ebb",
+        "isSelected": false
+      },
+      {
+        "text": "Condição | Faça filtros para seguir caminhos diferentes. Clique para adicionar uma condição: | Lead existente | Verifica se o lead já está cadastrado | Se esta condição for verdadeira | Adicionar condição | Todas as condições forem verdadeiras | Quando não atender a nenhuma condição | 0 | Sucessos | 0 | Alertas | 0 | Erros",
+        "classes": "react-flow__node react-flow__node-condition nopan selectable",
+        "id": "e6b9dd97-6c2a-4054-b75f-7e3cef12a5f8",
+        "isSelected": false
+      },
+      {
+        "text": "Espera | Espera um determinado tempo para continuar a execução. Adicione um tipo de espera: | Espera de alguns segundos | Espera uma quantidade informada de segundos para continuar a execução | Próximo passo | 0 | Sucessos | 0 | Alertas | 0 | Erros",
+        "classes": "react-flow__node react-flow__node-delay nopan selectable",
+        "id": "2287efdd-2ae1-4a7c-aa80-e47e3808926d",
+        "isSelected": false
+      },
+      {
+        "text": "💭Suporte",
+        "classes": "bb-feedback-button gleap-font gl-block bb-feedback-button--classic-button-style",
+        "id": null,
+        "isSelected": false
+      }
+    ]
+  },
+  "dashboard": [],
+  "controls": [
+    {
+      "type": "button",
+      "text": "Adicionar automação",
+      "id": null,
+      "classes": "border cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap text-sm font-medium border-solid ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-primary border-primary text-primary-foreground hover:bg-primary/90 h-8 rounded-md px-3 min-h-8 w-full gap-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.border-solid > div.flex > div.w-full > div.flex > button.border",
+      "xpath": "//*[@id=\"radix-:r8i:\"]/div[1]/div[1]/div[1]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Adicionar ação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-10 px-4 py-2 min-h-10 border-dashed w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__renderer > div.react-flow__pane > div.react-flow__viewport > div.react-flow__nodes > div.react-flow__node > div.relative > div.bg-white > div.px-4 > div.mt-2 > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Adicionar mapeamento de campo",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-10 px-4 py-2 min-h-10 border-dashed w-full mt-2",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__renderer > div.react-flow__pane > div.react-flow__viewport > div.react-flow__nodes > div.react-flow__node > div.relative > div.bg-white > div.px-4 > div.mt-2 > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Adicionar outra operação de campo",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-10 px-4 py-2 min-h-10 border-dashed w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__renderer > div.react-flow__pane > div.react-flow__viewport > div.react-flow__nodes > div.react-flow__node > div.relative > div.bg-white > div.px-4 > div.mt-2 > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/button[2]"
+    },
+    {
+      "type": "button",
+      "text": "Adicionar ação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-10 px-4 py-2 min-h-10 border-dashed w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__renderer > div.react-flow__pane > div.react-flow__viewport > div.react-flow__nodes > div.react-flow__node > div.relative > div.bg-white > div.px-4 > div.mt-2 > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[3]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Adicionar condição",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-10 px-4 py-2 min-h-10 border-dashed w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__renderer > div.react-flow__pane > div.react-flow__viewport > div.react-flow__nodes > div.react-flow__node > div.relative > div.bg-white > div.px-4 > div.mt-2 > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[5]/div[1]/div[3]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Adicionar ação",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-10 px-4 py-2 min-h-10 border-dashed w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__renderer > div.react-flow__pane > div.react-flow__viewport > div.react-flow__nodes > div.react-flow__node > div.relative > div.bg-white > div.px-4 > div.mt-2 > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[6]/div[1]/div[3]/div[1]/div[2]/button[1]"
+    },
+    {
+      "type": "button",
+      "text": "Adicionar condição",
+      "id": null,
+      "classes": "cursor-pointer select-none inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-primary text-primary bg-transparent hover:bg-accent h-10 px-4 py-2 min-h-10 border-dashed w-full",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.w-full > div.react-flow > div.react-flow__renderer > div.react-flow__pane > div.react-flow__viewport > div.react-flow__nodes > div.react-flow__node > div.relative > div.bg-white > div.px-4 > div.mt-2 > button.cursor-pointer",
+      "xpath": "//*[@id=\"layout\"]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[8]/div[1]/div[3]/div[1]/div[2]/button[1]"
+    }
+  ],
+  "forms": [
+    {
+      "type": "input:text",
+      "id": null,
+      "name": null,
+      "placeholder": null,
+      "value": null,
+      "labelText": null,
+      "classes": "flex w-full rounded-md border border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:border-primary h-8 px-3 py-2 pl-7",
+      "selector": "div.flex > div.w-full > div.flex > div.flex > div.border-solid > div.flex > div.w-full > div.flex > div.relative > input.flex"
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Execute ações no sistema. Clique para adicionar ações:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Cria o lead com as informações guardadas nos parâmetros da sessão. Caso o lead já existir, não será criado um novo lead",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Cria um novo negócio para o lead",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Caso ocorrer erro na execução da ação",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Próxima passo",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Realize operações com campos do sistema, campos adicionais ou fontes de dados. Clique para adicionar uma operação de campo:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Nome do lead -> {user}",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Nome do Instagram -> {user}",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Nome do Instagram -> {user}",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Próximo passo",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Envie e receba mensagens. Clique para adicionar uma mensagem:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "{message}",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Caso ocorrer erro no envio da mensagem",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Próximo passo",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Execute ações no sistema. Clique para adicionar ações:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Deleta o lead com as informações guardadas nos parâmetros da sessão. Caso não exista um lead, nenhuma ação será realizada",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Caso ocorrer erro na execução da ação",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Próxima passo",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Faça filtros para seguir caminhos diferentes. Clique para adicionar uma condição:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Verifica se o lead já está cadastrado",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Se esta condição for verdadeira",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Todas as condições forem verdadeiras",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Quando não atender a nenhuma condição",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Execute ações no sistema. Clique para adicionar ações:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Cria o lead com as informações guardadas nos parâmetros da sessão. Caso o lead já existir, não será criado um novo lead",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Cria um novo negócio para o lead",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Caso ocorrer erro na execução da ação",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Próxima passo",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Espera um determinado tempo para continuar a execução. Adicione um tipo de espera:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Espera uma quantidade informada de segundos para continuar a execução",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Próximo passo",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Faça filtros para seguir caminhos diferentes. Clique para adicionar uma condição:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Verifica se o lead já está cadastrado",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Se esta condição for verdadeira",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Todas as condições forem verdadeiras",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Quando não atender a nenhuma condição",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Espera um determinado tempo para continuar a execução. Adicione um tipo de espera:",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-xs"
+    },
+    {
+      "tag": "H3",
+      "text": "Espera uma quantidade informada de segundos para continuar a execução",
+      "classes": "font-normal text-subtitle text-ellipsis text-2xs line-clamp-1 leading-tight break-all"
+    },
+    {
+      "tag": "H3",
+      "text": "Próximo passo",
+      "classes": "font-normal text-subtitle overflow-hidden text-ellipsis text-2xs"
+    },
+    {
+      "tag": "H3",
+      "text": "resposta",
+      "classes": "text-lg md:text-2xl font-semibold text-title overflow-hidden text-ellipsis select-none"
+    }
+  ]
+}
