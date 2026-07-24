@@ -13,6 +13,7 @@ yarn-error.log*
 # Antigravity / Brain / Logs do sistema
 .system_generated/
 scratch/
+graphify-out/
 
 # VS Code & IDEs
 .vscode/
