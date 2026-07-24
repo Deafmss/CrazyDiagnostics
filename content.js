@@ -918,6 +918,81 @@
     return merged;
   }
 
+  function escapeHtml(unsafe) {
+    return (unsafe || '').toString().replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+  }
+
+  // === DISCREET UI TOAST NOTIFIER ===
+  function showDiscreetToast(title, message, type = 'critical') {
+    let container = document.getElementById('crazy-discreet-toast-container');
+    if (!container) {
+      container = document.createElement('div');
+      container.id = 'crazy-discreet-toast-container';
+      container.style.cssText = `
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999999;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        pointer-events: none;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      `;
+      document.body.appendChild(container);
+    }
+
+    // Cap at max 2 visible toasts to avoid clutter
+    if (container.children.length >= 2) {
+      container.removeChild(container.firstChild);
+    }
+
+    const toast = document.createElement('div');
+    toast.style.cssText = `
+      pointer-events: auto;
+      background: rgba(18, 20, 29, 0.92);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 77, 77, 0.3);
+      border-left: 3px solid #ff4d4d;
+      border-radius: 8px;
+      padding: 10px 14px;
+      color: #e2e8f0;
+      font-size: 11px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      max-width: 320px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    `;
+
+    toast.innerHTML = `
+      <span style="color: #ff4d4d; font-size: 14px; line-height: 1;">⚠️</span>
+      <div style="flex: 1; min-width: 0;">
+        <div style="font-weight: 600; color: #f8fafc; font-size: 11.5px; margin-bottom: 2px;">${escapeHtml(title)}</div>
+        <div style="color: #94a3b8; font-size: 10.5px; line-height: 1.3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${escapeHtml(message)}</div>
+      </div>
+      <button style="background: none; border: none; color: #64748b; font-size: 12px; cursor: pointer; padding: 0; margin-left: 4px;" onclick="this.parentElement.remove()">✕</button>
+    `;
+
+    container.appendChild(toast);
+
+    // Trigger animation
+    requestAnimationFrame(() => {
+      toast.style.opacity = '1';
+      toast.style.transform = 'translateY(0)';
+    });
+
+    // Auto dismiss after 4 seconds
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      toast.style.transform = 'translateY(10px)';
+      setTimeout(() => toast.remove(), 300);
+    }, 4000);
+  }
+
   // 2. Listen to messages from the injected script and forward to background worker
   window.addEventListener('message', function(event) {
     // Only trust messages from our injected script on the same window
@@ -935,6 +1010,18 @@
           clickedContext.companyId = tenantId;
         }
         return;
+      }
+
+      // Check for critical errors that should be shown to the user
+      const criticalTypes = [
+        'SECURITY_JWT_EXPIRED', 
+        'SECURITY_JWT_EXPIRING', 
+        'BUG_META_TOKEN_EXPIRED', 
+        'NETWORK_OFFLINE_LOCAL',
+        'WEBSOCKET_DROP'
+      ];
+      if (criticalTypes.includes(msg.type)) {
+        showDiscreetToast(msg.data?.message || 'Erro Crítico', msg.data?.errorDetail?.errorMessage || 'Ocorreu um erro no sistema.', 'critical');
       }
 
       const domContext = getPageContext();
@@ -1317,5 +1404,9 @@
       sendResponse({ context: getPageContext() });
     }
     return true; // Keep channel open for async response
+  });
+
+  window.addEventListener('offline', () => {
+    showDiscreetToast('Conexão Desconectada', 'Sua internet local caiu.', 'warning');
   });
 })();

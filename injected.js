@@ -1045,16 +1045,28 @@
       const isJson = (clone.headers.get('content-type') || '').includes('application/json');
       const url = urlString;
       if (!clone.ok) {
-        sendError('API_HTTP_ERROR', {
-          url: urlString,
-          method: method,
-          status: clone.status,
-          statusText: clone.statusText,
-          initiator: initiator,
-          errorDetail: { errorCode: 'network_fail', errorMessage: 'HTTP falhou e retorno não é JSON válido' },
-          rawResponse: null,
-          context: requestContext
-        });
+        if (!navigator.onLine) {
+          sendError('NETWORK_OFFLINE_LOCAL', {
+            url: urlString,
+            method: method,
+            status: clone.status,
+            statusText: clone.statusText,
+            message: 'Conexão Desconectada - Sua internet local caiu.',
+            errorDetail: { errorCode: 'offline', errorMessage: 'Sem internet local' },
+            context: requestContext
+          });
+        } else {
+          sendError('API_HTTP_ERROR', {
+            url: urlString,
+            method: method,
+            status: clone.status,
+            statusText: clone.statusText,
+            initiator: initiator,
+            errorDetail: { errorCode: 'network_fail', errorMessage: 'HTTP falhou e retorno não é JSON válido' },
+            rawResponse: null,
+            context: requestContext
+          });
+        }
       } else if (clone.status === 200 && isJson) {
         sendMessageToContent('API_HTTP_ERROR', {
           message: 'Resposta JSON malformada (Status 200)',
@@ -1201,15 +1213,27 @@
       return response;
     } catch (err) {
       // Network crash (CORS, offline, DNS fail)
-      sendError('API_NETWORK_ERROR', {
-        url: urlString,
-        method: method,
-        status: 0,
-        statusText: 'Network Failure / CORS Blocked',
-        initiator: initiator,
-        errorDetail: { errorCode: 'dns_cors_offline', errorMessage: err.message || 'Falha de conexão com a API' },
-        context: requestContext
-      });
+      if (!navigator.onLine) {
+        sendError('NETWORK_OFFLINE_LOCAL', {
+          url: urlString,
+          method: method,
+          status: 0,
+          statusText: 'Offline',
+          message: 'Conexão Desconectada - Sua internet local caiu.',
+          errorDetail: { errorCode: 'offline', errorMessage: 'Sem internet local' },
+          context: requestContext
+        });
+      } else {
+        sendError('API_NETWORK_ERROR', {
+          url: urlString,
+          method: method,
+          status: 0,
+          statusText: 'Network Failure / CORS Blocked',
+          initiator: initiator,
+          errorDetail: { errorCode: 'dns_cors_offline', errorMessage: err.message || 'Falha de conexão com a API' },
+          context: requestContext
+        });
+      }
       throw err;
     }
   };
@@ -1440,15 +1464,27 @@
     });
 
     xhr.addEventListener('error', function() {
-      sendError('API_NETWORK_ERROR', {
-        url: xhr._url,
-        method: xhr._method,
-        status: 0,
-        statusText: 'XHR Network Failure',
-        initiator: initiator,
-        errorDetail: { errorCode: 'xhr_failed', errorMessage: 'Requisição XHR falhou (bloqueio de rede ou CORS)' },
-        context: requestContext
-      });
+      if (!navigator.onLine) {
+        sendError('NETWORK_OFFLINE_LOCAL', {
+          url: xhr._url,
+          method: xhr._method,
+          status: 0,
+          statusText: 'Offline',
+          message: 'Conexão Desconectada - Sua internet local caiu.',
+          errorDetail: { errorCode: 'offline', errorMessage: 'Sem internet local' },
+          context: requestContext
+        });
+      } else {
+        sendError('API_NETWORK_ERROR', {
+          url: xhr._url,
+          method: xhr._method,
+          status: 0,
+          statusText: 'XHR Network Failure',
+          initiator: initiator,
+          errorDetail: { errorCode: 'xhr_failed', errorMessage: 'Requisição XHR falhou (bloqueio de rede ou CORS)' },
+          context: requestContext
+        });
+      }
     });
 
     this.__crazyStartTime = Date.now();

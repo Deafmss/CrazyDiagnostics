@@ -1396,6 +1396,85 @@ document.addEventListener('DOMContentLoaded', async () => {
     URL.revokeObjectURL(url);
   });
 
+  const exportReportBtn = document.getElementById('export-report-btn');
+  if (exportReportBtn) {
+    exportReportBtn.addEventListener('click', async () => {
+      let reportText = `# Relatório Técnico de Suporte - DataCrazy CRM\n`;
+      reportText += `Data e Hora: ${new Date().toLocaleString('pt-BR')}\n\n`;
+
+      // 1. Health Status
+      const overallText = document.getElementById('overall-health-text')?.textContent || 'Desconhecido';
+      const healthBadge = document.getElementById('overall-health-badge')?.textContent || 'N/A';
+      reportText += `## Saúde do CRM\n`;
+      reportText += `- Geral: ${overallText} (${healthBadge})\n`;
+      
+      const pillars = document.querySelectorAll('.pillar-item');
+      if (pillars.length > 0) {
+        pillars.forEach(p => {
+          const dot = p.querySelector('.pillar-dot');
+          let status = 'Desconhecido';
+          if(dot?.classList.contains('green')) status = 'Saudável';
+          else if(dot?.classList.contains('yellow')) status = 'Alerta';
+          else if(dot?.classList.contains('red')) status = 'Crítico';
+          
+          reportText += `- ${p.textContent.trim()}: ${status}\n`;
+        });
+      }
+      reportText += `\n`;
+
+      // 2. Active Context
+      reportText += `## Contexto Ativo\n`;
+      reportText += `- URL da Página: ${currentTabUrl || 'N/A'}\n`;
+      
+      if (currentActiveContext) {
+        if (currentActiveContext.leadName || currentActiveContext.leadPhone || currentActiveContext.leadId) {
+          reportText += `- Lead: ${[currentActiveContext.leadName, currentActiveContext.leadPhone, currentActiveContext.leadId].filter(Boolean).join(' | ')}\n`;
+        }
+        if (currentActiveContext.companyName || currentActiveContext.companyId) {
+          reportText += `- Empresa: ${[currentActiveContext.companyName, currentActiveContext.companyId].filter(Boolean).join(' | ')}\n`;
+        }
+        if (currentActiveContext.automationName || currentActiveContext.blockName) {
+          reportText += `- Automação/Bloco: ${[currentActiveContext.automationName, currentActiveContext.blockName].filter(Boolean).join(' / ')}\n`;
+        }
+      } else {
+        reportText += `- Nenhum contexto de lead, empresa ou automação ativo no momento.\n`;
+      }
+      reportText += `\n`;
+
+      // 3. Error Logs
+      reportText += `## Lista de Erros e Logs Ativos (${allLogs.length})\n`;
+      if (allLogs.length === 0) {
+        reportText += `Nenhum erro registrado nesta sessão.\n`;
+      } else {
+        allLogs.forEach((log, idx) => {
+          const translated = CrazyTranslator.translate(log);
+          reportText += `### [${idx + 1}] ${translated.title}\n`;
+          const statusCode = log.data?.status || log.data?.statusCode || log.data?.response?.status || 'N/A';
+          reportText += `- Status Code: ${statusCode}\n`;
+          reportText += `- URL Afetada: ${log.data?.url || log.data?.pageUrl || 'N/A'}\n`;
+          reportText += `- Passos para Solução:\n`;
+          translated.solution.forEach((step, sIdx) => {
+            const cleanStep = step.replace(/<\/?[^>]+(>|$)/g, "");
+            reportText += `  ${sIdx + 1}. ${cleanStep}\n`;
+          });
+          reportText += `\n`;
+        });
+      }
+
+      try {
+        await navigator.clipboard.writeText(reportText);
+        const btnText = exportReportBtn.querySelector('span');
+        const originalText = btnText.textContent;
+        btnText.textContent = '✓ Copiado!';
+        setTimeout(() => {
+          btnText.textContent = originalText;
+        }, 2000);
+      } catch (err) {
+        console.error('Falha ao copiar relatório:', err);
+      }
+    });
+  }
+
   // 14. Open Floating Window Action
   if (btnDetach) {
     btnDetach.addEventListener('click', () => {
@@ -1422,6 +1501,14 @@ document.addEventListener('DOMContentLoaded', async () => {
       initTabContext().then(() => {
         loadLogs();
       });
+    });
+  }
+
+  // 14.2. Feedback / Bug Report Action
+  const btnFeedback = document.getElementById('btn-feedback');
+  if (btnFeedback) {
+    btnFeedback.addEventListener('click', () => {
+      chrome.tabs.create({ url: 'https://github.com/Deafmss/CrazyDiagnostics/issues/new/choose' });
     });
   }
 

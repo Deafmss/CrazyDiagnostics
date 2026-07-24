@@ -276,6 +276,15 @@ const CrazyTranslator = {
         'Para contornar temporariamente, <strong>evite clicar rapidamente</strong> nos botões de ação.',
         'Reporte o bug indicando qual <strong>botão e página</strong> permitem o duplo envio.'
       ]
+    },
+    'NETWORK_OFFLINE_LOCAL': {
+      title: 'Internet Local Desconectada',
+      meaning: 'Sua conexão local de Wi-Fi ou cabo de rede caiu. As requisições estão falhando porque o navegador está completamente sem acesso à internet, e não por um problema no servidor do CRM.',
+      solution: [
+        'Verifique se o seu <strong>Wi-Fi está ligado</strong> ou se o cabo de rede está conectado.',
+        'Tente acessar outro site (como google.com) para testar sua internet.',
+        'Assim que a conexão voltar, o CRM retornará ao funcionamento normal automaticamente.'
+      ]
     }
   },
 
@@ -462,7 +471,7 @@ const CrazyTranslator = {
         meaning: bugTypeInfo.meaning,
         solution: bugTypeInfo.solution,
         categoryClass: 'tag-system',
-        categoryLabel: entry.type.startsWith('BUG_') ? 'Bug Detectado' : (entry.type.startsWith('SECURITY_') ? 'Segurança' : 'Sistema'),
+        categoryLabel: entry.type.startsWith('BUG_') ? 'Bug Detectado' : (entry.type.startsWith('SECURITY_') ? 'Segurança' : (entry.type === 'NETWORK_OFFLINE_LOCAL' ? 'Rede Local' : 'Sistema')),
         gatewayName: null
       };
     }

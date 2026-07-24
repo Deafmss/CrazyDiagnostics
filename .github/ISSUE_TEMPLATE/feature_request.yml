@@ -1,0 +1,25 @@
+name: '💡 Sugerir uma Melhoria ou Ideia'
+description: 'Envie uma sugestão de nova funcionalidade ou melhoria para a extensão'
+title: '[SUGESTÃO] '
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tem uma ideia incrível para o **CrazyDiagnostics**? Queremos ouvir você!
+  - type: textarea
+    id: idea
+    attributes:
+      label: Qual é a sua ideia ou sugestão?
+      description: Explique de forma clara como essa funcionalidade ajudaria no dia a dia do CRM.
+      placeholder: Exemplo - Seria ótimo ter um filtro para mostrar apenas erros de automação do Flow...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Como você imagina a solução?
+      description: Descreva como você gostaria que essa ideia funcionasse visualmente ou na prática.
+      placeholder: Um botão novo no popup ou um alerta visual...
+    validations:
+      required: false

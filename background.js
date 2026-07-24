@@ -944,6 +944,67 @@ chrome.alarms.onAlarm.addListener(function(alarm) {
   }
 });
 
+// Clean expired logs function (7-day TTL and Max 500 logs)
+function cleanExpiredLogs() {
+  const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
+  const now = Date.now();
+
+  chrome.storage.local.get(null, function(items) {
+    const itemsObj = items || {};
+    const logKeys = Object.keys(itemsObj).filter(key => key.startsWith('logs_') || key === 'pinned_errors');
+    let allLogs = [];
+
+    logKeys.forEach(key => {
+      let logs = itemsObj[key];
+      if (Array.isArray(logs)) {
+        logs = logs.filter(log => (now - (log.timestamp || 0)) < SEVEN_DAYS_MS);
+        logs.forEach(log => {
+          allLogs.push({ key, log });
+        });
+      }
+    });
+
+    allLogs.sort((a, b) => (b.log.timestamp || 0) - (a.log.timestamp || 0));
+    const logsToKeep = allLogs.slice(0, 500);
+
+    const updatedStorage = {};
+    const keysToRemove = [];
+
+    logKeys.forEach(key => {
+      updatedStorage[key] = [];
+    });
+
+    logsToKeep.forEach(item => {
+      updatedStorage[item.key].push(item.log);
+    });
+
+    logKeys.forEach(key => {
+      if (updatedStorage[key].length === 0) {
+        delete updatedStorage[key];
+        keysToRemove.push(key);
+      }
+    });
+
+    if (keysToRemove.length > 0) {
+      chrome.storage.local.remove(keysToRemove);
+    }
+    
+    if (Object.keys(updatedStorage).length > 0) {
+      chrome.storage.local.set(updatedStorage, function() {
+        console.log(`CrazyDiagnostics: Log cleanup completed. Retained ${logsToKeep.length} logs.`);
+      });
+    } else {
+      console.log('CrazyDiagnostics: Log cleanup completed. No logs to retain.');
+    }
+  });
+}
+
+// Run cleanup on extension startup
+cleanExpiredLogs();
+
+// Run cleanup every 1 hour
+setInterval(cleanExpiredLogs, 3600000);
+
 // Initial startup token fetch
 fetchLocalServerToken();
 

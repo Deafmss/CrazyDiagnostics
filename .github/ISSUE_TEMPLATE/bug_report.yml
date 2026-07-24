@@ -1,0 +1,48 @@
+name: '🐛 Relatar um Bug / Erro'
+description: 'Crie um relato detalhado sobre um erro ou falha encontrada no CRM ou na extensão'
+title: '[BUG] '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por nos ajudar a melhorar o **CrazyDiagnostics**! Por favor, preencha as informações abaixo para investigar o problema.
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição do Erro
+      description: O que aconteceu exatamente? Descreva o comportamento inesperado.
+      placeholder: Exemplo - Ao clicar no chat do WhatsApp, o erro 190 da Meta apareceu no popup.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para Reproduzir
+      description: Liste os passos para que os desenvolvedores consigam ver o erro acontecer.
+      placeholder: |
+        1. Abrir a aba de Atendimento no CRM
+        2. Clicar no contato X
+        3. Tentar enviar mensagem Y
+    validations:
+      required: true
+  - type: textarea
+    id: report_text
+    attributes:
+      label: Relatório Técnico (Copiado da Extensão)
+      description: Clique no botão "📋 Relatório" no topo do popup da extensão e cole o conteúdo aqui.
+      placeholder: Cole o relatório formatado aqui...
+    validations:
+      required: false
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Navegador Utilizado
+      options:
+        - Google Chrome
+        - Microsoft Edge
+        - Brave Browser
+        - Opera / Vivaldi
+        - Outro
+    validations:
+      required: true
