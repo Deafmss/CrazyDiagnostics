@@ -150,11 +150,17 @@ function processLogQueue(tabId) {
       }
     } catch(e) {}
 
-    const signature = `${entry.type}:${entry.data?.url || ''}:${entry.data?.errorDetail?.errorCode || entry.data?.message || ''}`;
+    const ctx = entry.data?.context || {};
+    const leadContextKey = ctx.leadId || ctx.leadPhone || '';
+    const autoContextKey = ctx.automationId || ctx.blockId || '';
+    const signature = `${entry.type}:${entry.data?.url || ''}:${entry.data?.errorDetail?.errorCode || entry.data?.message || ''}:${leadContextKey}:${autoContextKey}`;
     let targetSyncLog = entry;
 
     const duplicate = existingLogs.find(existing => {
-      const existingSig = `${existing.type}:${existing.data?.url || ''}:${existing.data?.errorDetail?.errorCode || existing.data?.message || ''}`;
+      const eCtx = existing.data?.context || {};
+      const eLeadKey = eCtx.leadId || eCtx.leadPhone || '';
+      const eAutoKey = eCtx.automationId || eCtx.blockId || '';
+      const existingSig = `${existing.type}:${existing.data?.url || ''}:${existing.data?.errorDetail?.errorCode || existing.data?.message || ''}:${eLeadKey}:${eAutoKey}`;
       const timeDiff = entry.timestamp - (existing.timestamp || 0);
       return existingSig === signature && timeDiff <= 60000 && timeDiff >= 0;
     });
@@ -185,7 +191,8 @@ function processLogQueue(tabId) {
       chrome.runtime.sendMessage({ action: 'UPDATE_ERRORS_UI', tabId: tabId }).catch(() => {});
       
       if (queue.length > 0) {
-        processNext(tabLogsCache.get(tabId));
+        // Use setTimeout(0) to release the call stack and avoid Maximum call stack size exceeded
+        setTimeout(() => processNext(tabLogsCache.get(tabId)), 0);
       }
     });
   };
@@ -570,6 +577,7 @@ chrome.tabs.onRemoved.addListener(function(tabId) {
   chrome.storage.session.remove([`company_${tabId}`]);
   tabLogsCache.delete(tabId);
   tabConnsCache.delete(tabId);
+  delete pendingLogQueues[tabId];
   if (logWriteTimeouts.has(tabId)) {
     clearTimeout(logWriteTimeouts.get(tabId));
     logWriteTimeouts.delete(tabId);

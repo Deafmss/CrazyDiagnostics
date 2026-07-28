@@ -850,7 +850,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       const catClass = translated.categoryClass;
 
       // Pinned logs bypass contextual/entity filters but must still be counted under all categories
-      if (!log.pinned) {
+      const isGlobalError = log.pinned || translated.categoryClass === 'tag-system' || log.type === 'WS_CLOSE' || log.type === 'WS_ERROR' || log.type?.startsWith('SECURITY_') || log.type?.startsWith('BUG_');
+      if (!isGlobalError) {
         // Check if error is relevant to the current page module
         if (contextMode === 'page') {
           const isContextuallyActive = isSameArea(log.data?.pageUrl, currentTabUrl, log);
@@ -921,6 +922,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           (log.type || '') + ' ' +
           String(technicalMessage) + ' ' +
           String(technicalCode) + ' ' +
+          String(log.data?.status || log.data?.statusCode || log.data?.response?.status || '') + ' ' +
           (ctx.leadName || '') + ' ' +
           (ctx.leadPhone || '') + ' ' +
           (ctx.leadId || '') + ' ' +
@@ -934,7 +936,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
 
       // B. Contextual Filter (Show only if Pinned, or in 'all' mode, or matches the same CRM Area)
-      if (log.pinned) return true;
+      const isGlobalError = log.pinned || translated.categoryClass === 'tag-system' || log.type === 'WS_CLOSE' || log.type === 'WS_ERROR' || log.type?.startsWith('SECURITY_') || log.type?.startsWith('BUG_');
+      if (isGlobalError) return true;
       if (contextMode === 'page') {
         const errorPageUrl = log.data?.pageUrl;
         if (!isSameArea(errorPageUrl, currentTabUrl, log)) return false;

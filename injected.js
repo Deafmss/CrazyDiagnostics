@@ -106,7 +106,7 @@
 
   // === BUG DETECTION ENGINE ===
   const requestTracker = new Map(); // URL -> { count, firstSeen }
-  const REQUEST_LOOP_THRESHOLD = 5;
+  const REQUEST_LOOP_THRESHOLD = 25;
   const REQUEST_LOOP_WINDOW_MS = 10000;
 
   function trackRequest(url) {
@@ -132,10 +132,19 @@
       requestTracker.set(normalizedUrl, { count: 1, firstSeen: now });
     }
     
-    // Cleanup old entries every 50 requests
+    // Cleanup old entries and enforce hard cap
     if (requestTracker.size > 100) {
+      let deleted = 0;
       for (const [key, val] of requestTracker) {
-        if (now - val.firstSeen > REQUEST_LOOP_WINDOW_MS * 2) requestTracker.delete(key);
+        if (now - val.firstSeen > REQUEST_LOOP_WINDOW_MS * 2) {
+          requestTracker.delete(key);
+          deleted++;
+        }
+      }
+      // Hard cap: if nothing expired, force-delete the oldest entry
+      if (deleted === 0 && requestTracker.size > 100) {
+        const oldestKey = requestTracker.keys().next().value;
+        if (oldestKey) requestTracker.delete(oldestKey);
       }
     }
   }
@@ -167,10 +176,19 @@
     
     recentPosts.set(key, now);
     
-    // Cleanup old entries
+    // Cleanup old entries and enforce hard cap
     if (recentPosts.size > 50) {
+      let deleted = 0;
       for (const [k, v] of recentPosts) {
-        if (now - v > 5000) recentPosts.delete(k);
+        if (now - v > 5000) {
+          recentPosts.delete(k);
+          deleted++;
+        }
+      }
+      // Hard cap: force-delete oldest if none expired
+      if (deleted === 0 && recentPosts.size > 50) {
+        const oldestKey = recentPosts.keys().next().value;
+        if (oldestKey) recentPosts.delete(oldestKey);
       }
     }
   }
@@ -325,23 +343,33 @@
   }
 
   // Filter out noisy third-party tracking/analytics requests (GTM, GA, Facebook Pixel, etc.)
+  const TRACKING_HOSTNAMES = new Set([
+    'google-analytics.com', 'www.google-analytics.com',
+    'googletagmanager.com', 'www.googletagmanager.com',
+    'doubleclick.net', 'stats.g.doubleclick.net',
+    'connect.facebook.net',
+    'hotjar.com', 'vars.hotjar.com', 'script.hotjar.com',
+    'clarity.ms', 'www.clarity.ms',
+    'pixel.wp.com'
+  ]);
+
   function isThirdPartyTrackingUrl(url) {
     if (!url) return false;
-    const urlStr = String(url).toLowerCase();
-    const trackingPatterns = [
-      'google-analytics.com',
-      'googletagmanager.com',
-      'google.com/ccm/collect',
-      'doubleclick.net',
-      'facebook.com/tr',
-      'connect.facebook.net',
-      'hotjar.com',
-      'clarity.ms',
-      'pixel.wp.com',
-      '/collect?',
-      '/collect/'
-    ];
-    return trackingPatterns.some(pattern => urlStr.includes(pattern));
+    try {
+      const hostname = new URL(url).hostname.toLowerCase();
+      // Check exact match or parent domain match
+      if (TRACKING_HOSTNAMES.has(hostname)) return true;
+      // Check parent domain (e.g. 'sub.hotjar.com' -> 'hotjar.com')
+      const parts = hostname.split('.');
+      if (parts.length > 2) {
+        const parentDomain = parts.slice(-2).join('.');
+        if (TRACKING_HOSTNAMES.has(parentDomain)) return true;
+      }
+      return false;
+    } catch (e) {
+      // Fallback for relative URLs or malformed URLs
+      return false;
+    }
   }
 
   // Scan successful API responses to detect active connections/integrations
@@ -927,6 +955,29 @@
 
       const contentType = clone.headers.get('content-type') || '';
       if (!contentType.includes('application/json')) {
+        if (contentType.includes('text/html')) {
+          try {
+            const htmlText = await clone.clone().text();
+            const lowerHtml = htmlText.toLowerCase();
+            if (lowerHtml.includes('502 bad gateway') || lowerHtml.includes('504 gateway timeout') || lowerHtml.includes('500 internal server error') || lowerHtml.includes('404 this page could not be found')) {
+              sendError('API_HTTP_ERROR', {
+                url: urlString,
+                method: method,
+                status: clone.status === 200 ? 502 : clone.status,
+                statusText: 'Servidor retornou página de erro HTML (Status 200)',
+                initiator: initiator,
+                errorDetail: {
+                  errorCode: 'html_error_page',
+                  errorMessage: 'O servidor retornou uma página de erro HTML (502/504/404) mascarada em status HTTP 200.'
+                },
+                rawResponse: htmlText.substring(0, 500),
+                context: requestContext
+              });
+              return;
+            }
+          } catch(e) {}
+        }
+
         if (!clone.ok) {
           sendError('API_HTTP_ERROR', {
             url: urlString,
@@ -1184,6 +1235,16 @@
     try {
       trackRequest(urlString);
       detectDoubleSubmit(urlString, method, options.body);
+      
+      requestContext = {
+        ...requestContext,
+        ...scanObjectForContactInfo(options.body),
+        ...scanObjectForAutomationInfo(options.body),
+        url: urlString,
+        pageUrl: window.location.href,
+        timestamp: new Date().toISOString()
+      };
+
       const fetchStartTime = Date.now();
       const response = await originalFetch.apply(this, args);
       const fetchDuration = Date.now() - fetchStartTime;
@@ -1400,7 +1461,7 @@
               errorDetail: err,
               rawResponse: parsedJson || xhr.responseText,
               context: {
-                ...requestContext,
+                ...xhr.__crazyRequestContext,
                 ...compInfo,
                 ...autoInfo,
                 ...err.context
@@ -1417,7 +1478,7 @@
             errorDetail: { errorCode: 'xhr_error_' + xhr.status, errorMessage: xhr.statusText || 'Erro no canal XHR' },
             rawResponse: parsedJson || xhr.responseText,
             context: {
-              ...requestContext,
+              ...xhr.__crazyRequestContext,
               ...compInfo,
               ...autoInfo
             }
@@ -1452,7 +1513,7 @@
               errorDetail: err,
               rawResponse: parsedJson,
               context: {
-                ...requestContext,
+                ...xhr.__crazyRequestContext,
                 ...compInfo,
                 ...autoInfo,
                 ...err.context
@@ -1472,7 +1533,7 @@
           statusText: 'Offline',
           message: 'Conexão Desconectada - Sua internet local caiu.',
           errorDetail: { errorCode: 'offline', errorMessage: 'Sem internet local' },
-          context: requestContext
+          context: xhr.__crazyRequestContext
         });
       } else {
         sendError('API_NETWORK_ERROR', {
@@ -1482,10 +1543,19 @@
           statusText: 'XHR Network Failure',
           initiator: initiator,
           errorDetail: { errorCode: 'xhr_failed', errorMessage: 'Requisição XHR falhou (bloqueio de rede ou CORS)' },
-          context: requestContext
+          context: xhr.__crazyRequestContext
         });
       }
     });
+
+    xhr.__crazyRequestContext = {
+      ...requestContext,
+      ...scanObjectForContactInfo(args[0]),
+      ...scanObjectForAutomationInfo(args[0]),
+      url: xhr._url,
+      pageUrl: window.location.href,
+      timestamp: new Date().toISOString()
+    };
 
     this.__crazyStartTime = Date.now();
     detectDoubleSubmit(xhr._url, xhr._method, args[0]);

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "CrazyDiagnostics - DataCrazy CRM Helper",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "Diagnóstico inteligente de erros de rede, fluxos, APIs e console de forma amigável no CRM DataCrazy.",
   "permissions": [
     "storage",
@@ -29,8 +29,7 @@
         "content.js"
       ],
       "run_at": "document_start"
-    },
-
+    }
   ],
   "icons": {
     "16": "icon16.png",

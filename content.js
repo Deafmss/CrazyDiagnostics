@@ -80,26 +80,31 @@
       lastCompanyKey = currentCompanyKey;
     }
     // 3. Periodic DOM warning scanner (every 3 seconds / 3 ticks)
-    if (typeof scanCounter === 'undefined') {
-      window.__CD_scanCounter = 0;
-    }
-    window.__CD_scanCounter++;
-    if (window.__CD_scanCounter >= 3) {
-      window.__CD_scanCounter = 0;
+    cdScanCounter++;
+    if (cdScanCounter >= 3) {
+      cdScanCounter = 0;
       scanDOMForErrors();
     }
   }, 1000);
+
+  let cdScanCounter = 0;
 
   function scanDOMForErrors() {
     try {
       const candidates = document.querySelectorAll('div, span, p, label, a, [role="alert"]');
       candidates.forEach(function(candidate) {
+        const ignoredTags = ['SCRIPT', 'STYLE', 'TEMPLATE', 'NOSCRIPT', 'SVG', 'LINK', 'META', 'HEAD'];
+        if (ignoredTags.includes(candidate.tagName)) return;
+
         if (candidate.hasAttribute('data-crazy-scanned')) return;
         // Only inspect leaf-like elements or elements with short text to avoid performance lag
         if (candidate.children && candidate.children.length > 1) return;
         
         // Skip elements that are not visible to the user
         if (candidate.hidden || (candidate.style && candidate.style.display === 'none')) return;
+
+        const rawText = candidate.textContent || '';
+        if (rawText.includes('self.__next_f') || rawText.includes('__NEXT_DATA__') || rawText.includes('{display:') || rawText.includes('vue-notification')) return;
 
         const textVal = (candidate.textContent || '').trim();
         if (textVal.length > 3 && textVal.length < 300) {
@@ -120,8 +125,8 @@
           const isCRMWarningText = 
             lowerText.includes('24 horas') || 
             lowerText.includes('não suportad') ||
-            lowerText.includes('unsupported') ||
-            lowerText.includes('template');
+            lowerText.includes('unsupported_unknown_message_type') ||
+            lowerText.includes('janela de atendimento');
           if (isCRMWarningText) {
             reportToast(candidate.innerText || textVal, candidate.className || '', candidate);
             candidate.setAttribute('data-crazy-scanned', '1');
@@ -129,7 +134,7 @@
         }
       });
     } catch (e) {
-      console.warn('CrazyDiagnostics: Erro na varredura periódica de erros:', e);
+      // Silenced in production to avoid console flooding
     }
   }
 
@@ -176,7 +181,7 @@
     'erro', 'falha', 'inválid', 'error', 'failed', 'locked', 'bloqueado', 'desabilitad',
     'restringid', 'incorrect', 'incorret', 'problema', 'cannot', 'desconectado',
     'suspenso', 'unsupported', 'não suportad',
-    '24 horas', 'template', 'warning', 'danger', 'alert'
+    '24 horas', 'warning', 'danger', 'alert'
   ];
 
 
@@ -579,28 +584,38 @@
         }
       }
 
-      // Fallback 2: Generic DOM scanner for profile pane inputs/labels
+      // Fallback 2: Targeted DOM scanner for profile pane inputs/labels (optimized selectors)
       if (!ctx.leadName || !ctx.leadPhone) {
         try {
-          const allElements = document.querySelectorAll('div, span, label, p');
-          for (const el of allElements) {
-            const labelText = (el.innerText || el.textContent || '').trim().toLowerCase();
-            if (!ctx.leadName && (labelText === 'nome' || labelText === 'nome do lead' || labelText === 'cliente')) {
-              let valueEl = el.nextElementSibling || el.parentElement?.querySelector('input, span, strong');
-              if (valueEl) {
-                const val = (valueEl.value || valueEl.innerText || valueEl.textContent || '').trim();
-                if (val && val.length > 2 && val.length < 50 && !leadNameBlocklist.some(term => val.toLowerCase().includes(term))) {
-                  ctx.leadName = val;
+          // Use targeted containers instead of scanning the entire DOM
+          const profileContainers = document.querySelectorAll(
+            'aside, [class*="sidebar"], [class*="profile"], [class*="detail"], [class*="contact-info"], [class*="lead-info"], form'
+          );
+          const searchScope = profileContainers.length > 0 ? profileContainers : [document.body];
+          
+          for (const container of searchScope) {
+            if (ctx.leadName && ctx.leadPhone) break;
+            const labels = container.querySelectorAll('label, span, div');
+            for (const el of labels) {
+              if (el.children && el.children.length > 1) continue; // Leaf-like only
+              const labelText = (el.textContent || '').trim().toLowerCase();
+              if (!ctx.leadName && (labelText === 'nome' || labelText === 'nome do lead' || labelText === 'cliente')) {
+                let valueEl = el.nextElementSibling || el.parentElement?.querySelector('input, span, strong');
+                if (valueEl) {
+                  const val = (valueEl.value || valueEl.innerText || valueEl.textContent || '').trim();
+                  if (val && val.length > 2 && val.length < 50 && !leadNameBlocklist.some(term => val.toLowerCase().includes(term))) {
+                    ctx.leadName = val;
+                  }
                 }
               }
-            }
-            if (!ctx.leadPhone && (labelText === 'telefone' || labelText === 'celular' || labelText === 'whatsapp')) {
-              let valueEl = el.nextElementSibling || el.parentElement?.querySelector('input, span, strong');
-              if (valueEl) {
-                const val = (valueEl.value || valueEl.innerText || valueEl.textContent || '').trim();
-                const cleanPhone = val.replace(/\D/g, '');
-                if (cleanPhone.length >= 8 && cleanPhone.length <= 15) {
-                  ctx.leadPhone = cleanPhone;
+              if (!ctx.leadPhone && (labelText === 'telefone' || labelText === 'celular' || labelText === 'whatsapp')) {
+                let valueEl = el.nextElementSibling || el.parentElement?.querySelector('input, span, strong');
+                if (valueEl) {
+                  const val = (valueEl.value || valueEl.innerText || valueEl.textContent || '').trim();
+                  const cleanPhone = val.replace(/\D/g, '');
+                  if (cleanPhone.length >= 8 && cleanPhone.length <= 15) {
+                    ctx.leadPhone = cleanPhone;
+                  }
                 }
               }
             }
@@ -894,7 +909,7 @@
       }
 
     } catch (e) {
-      console.warn('CrazyDiagnostics: Erro ao mapear contexto da página:', e);
+      // Silenced in production to avoid console flooding on interval
     }
 
     return ctx;
@@ -1087,62 +1102,41 @@
   function isWarningOrErrorColor(element) {
     if (!element) return null;
     
-    // Traverse up to 3 levels (self + 2 parents) to detect color classes or styles from wrappers/toasts
+    // Traverse up to 3 levels (self + 2 parents) to detect color via classes, attributes, and inline styles
+    // NO getComputedStyle — avoids Layout Thrashing in MutationObserver loops
     let current = element;
     for (let i = 0; i < 3; i++) {
       if (!current || current === document.body) break;
 
-      // 1. Fast-path: Check CSS class names for common error/warning patterns to avoid layout thrashing
-      const classList = String(current.className || '').toLowerCase();
+      // 1. Check CSS class names for common error/warning patterns (fast path)
+      const classList = (current.getAttribute('class') || '').toLowerCase();
       const hasErrorClass = classList.includes('red') || classList.includes('danger') || classList.includes('error') || classList.includes('rose') || classList.includes('alert-danger') || classList.includes('destructive');
       if (hasErrorClass) return 'error';
       
       const hasWarningClass = classList.includes('yellow') || classList.includes('warning') || classList.includes('amber') || classList.includes('orange') || classList.includes('alert-warning') || classList.includes('warn');
       if (hasWarningClass) return 'warning';
 
-      // 2. Slow-path: Fallback to getComputedStyle
-      try {
-        const style = window.getComputedStyle(current);
-        const color = style.color || '';
-        const bgColor = style.backgroundColor || '';
-        
-        function parseRGB(rgbStr) {
-          if (!rgbStr) return null;
-          // Ignore transparent background colors
-          if (rgbStr.includes('rgba') && (rgbStr.endsWith(', 0)') || rgbStr.endsWith(', 0.0)'))) return null;
-          if (rgbStr === 'transparent') return null;
-          const match = rgbStr.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
-          if (match) {
-            return {
-              r: parseInt(match[1]),
-              g: parseInt(match[2]),
-              b: parseInt(match[3])
-            };
-          }
-          return null;
+      // 2. Check data attributes (commonly used in design systems)
+      const dataType = current.getAttribute('data-type') || current.getAttribute('data-status') || current.getAttribute('data-variant') || '';
+      if (dataType) {
+        const lowerData = dataType.toLowerCase();
+        if (lowerData === 'error' || lowerData === 'danger' || lowerData === 'destructive') return 'error';
+        if (lowerData === 'warning' || lowerData === 'warn' || lowerData === 'caution') return 'warning';
+      }
+
+      // 3. Check inline style for explicit color values (no layout recalculation)
+      const inlineStyle = current.getAttribute('style') || '';
+      if (inlineStyle) {
+        const lowerStyle = inlineStyle.toLowerCase();
+        // Detect explicit red/error inline colors
+        if (lowerStyle.includes('color: red') || lowerStyle.includes('color:#f') || lowerStyle.includes('color: #e') || lowerStyle.includes('color: #d') || lowerStyle.includes('border-color: red') || lowerStyle.includes('background-color: red') || lowerStyle.includes('rgb(255') || lowerStyle.includes('rgb(239') || lowerStyle.includes('rgb(220')) {
+          return 'error';
         }
-
-        const textRGB = parseRGB(color);
-        const bgRGB = parseRGB(bgColor);
-
-        function checkRGB(rgb) {
-          if (!rgb) return null;
-          const { r, g, b } = rgb;
-          // Relative dominant comparison (more robust for Tailwind pastels and dark text colors)
-          // High red (Error): R is dominant, and significantly higher than G and B
-          if (r > 100 && r > 1.35 * g && r > 1.35 * b) {
-            return 'error';
-          }
-          // High yellow/orange/amber (Warning): R and G are dominant, R > G (or R close to G), and B is low
-          if (r > 100 && g > 60 && r > 0.9 * g && g > 1.35 * b) {
-            return 'warning';
-          }
-          return null;
+        // Detect explicit yellow/orange inline colors
+        if (lowerStyle.includes('color: orange') || lowerStyle.includes('color: yellow') || lowerStyle.includes('color:#f9') || lowerStyle.includes('color:#fb') || lowerStyle.includes('background-color: orange') || lowerStyle.includes('background-color: yellow')) {
+          return 'warning';
         }
-
-        const result = checkRGB(textRGB) || checkRGB(bgRGB);
-        if (result) return result;
-      } catch (e) {}
+      }
 
       current = current.parentElement;
     }
@@ -1271,6 +1265,13 @@
           if (node.nodeType !== Node.ELEMENT_NODE) return;
 
           const el = node;
+
+          const ignoredTags = ['SCRIPT', 'STYLE', 'TEMPLATE', 'NOSCRIPT', 'SVG', 'LINK', 'META', 'HEAD'];
+          if (ignoredTags.includes(el.tagName)) return;
+          
+          const rawTextContent = el.textContent || '';
+          if (rawTextContent.includes('self.__next_f') || rawTextContent.includes('__NEXT_DATA__') || rawTextContent.includes('{display:') || rawTextContent.includes('vue-notification')) return;
+
           const classList = String(el.className || '');
           const htmlContent = el.innerHTML || '';
           
@@ -1282,8 +1283,8 @@
           const isCRMWarningText = 
             normalizedText.includes('24 horas') || 
             normalizedText.includes('não suportad') ||
-            normalizedText.includes('unsupported') ||
-            normalizedText.includes('template');
+            normalizedText.includes('unsupported_unknown_message_type') ||
+            normalizedText.includes('janela de atendimento');
           
           // Check if the element looks like a toast, alert, or modal popup
           const isToastOrAlert = 
@@ -1350,6 +1351,12 @@
             }
 
             candidates.forEach(function(candidate) {
+              const ignoredTags = ['SCRIPT', 'STYLE', 'TEMPLATE', 'NOSCRIPT', 'SVG', 'LINK', 'META', 'HEAD'];
+              if (ignoredTags.includes(candidate.tagName)) return;
+              
+              const rawTextCand = candidate.textContent || '';
+              if (rawTextCand.includes('self.__next_f') || rawTextCand.includes('__NEXT_DATA__') || rawTextCand.includes('{display:') || rawTextCand.includes('vue-notification')) return;
+
               if (candidate.children && candidate.children.length > 1) return; // Only check leaf elements
               const textVal = (candidate.textContent || '').trim();
               if (textVal.length > 3 && textVal.length < 300) {
@@ -1372,12 +1379,18 @@
                 descendants.forEach(d => warningCandidates.push(d));
               }
               warningCandidates.forEach(function(desc) {
+                const ignoredTags = ['SCRIPT', 'STYLE', 'TEMPLATE', 'NOSCRIPT', 'SVG', 'LINK', 'META', 'HEAD'];
+                if (ignoredTags.includes(desc.tagName)) return;
+                
+                const rawTextDesc = desc.textContent || '';
+                if (rawTextDesc.includes('self.__next_f') || rawTextDesc.includes('__NEXT_DATA__') || rawTextDesc.includes('{display:') || rawTextDesc.includes('vue-notification')) return;
+
                 if (desc.children && desc.children.length > 0) return; // Leaf node
                 const descText = (desc.textContent || '').trim();
                 const descNormalized = descText.toLowerCase();
                 if (
                   descText.length > 3 && 
-                  (descNormalized.includes('24 horas') || descNormalized.includes('não suportad') || descNormalized.includes('unsupported') || descNormalized.includes('template'))
+                  (descNormalized.includes('24 horas') || descNormalized.includes('não suportad') || descNormalized.includes('unsupported_unknown_message_type') || descNormalized.includes('janela de atendimento'))
                 ) {
                   reportToast(desc.innerText || descText, desc.className || '', desc);
                 }
